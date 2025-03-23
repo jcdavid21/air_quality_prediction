@@ -1,0 +1,3313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6c6f86374978b3368d5846ba66e0ebd8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6c6f86374978b3368d5846ba66e0ebd8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6c6f86374978b3368d5846ba66e0ebd8 = L.map(
+                "map_6c6f86374978b3368d5846ba66e0ebd8",
+                {
+                    center: [12.118272266641094, 122.60760037219951],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1484534b8a8c43354e9881fcf8aa2675 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1484534b8a8c43354e9881fcf8aa2675.addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+            var circle_marker_0a773d8eedd32d98146fb336f73b992b = L.circleMarker(
+                [16.1553, 119.9804],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_a2b84b8ec7b938117821aab66dfd6693 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6abaf624d41197e1fd8f252712045384 = $(`<div id="html_6abaf624d41197e1fd8f252712045384" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Alaminos</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_a2b84b8ec7b938117821aab66dfd6693.setContent(html_6abaf624d41197e1fd8f252712045384);
+            
+        
+
+        circle_marker_0a773d8eedd32d98146fb336f73b992b.bindPopup(popup_a2b84b8ec7b938117821aab66dfd6693)
+        ;
+
+        
+    
+    
+            var circle_marker_33f1a07978165c52834940f2cb32cc22 = L.circleMarker(
+                [15.1454, 120.59],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_79041ce54586f0bb3cba25ec9b3bd4e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1dae7dec11e92d492ca8a9b04b1e2d4e = $(`<div id="html_1dae7dec11e92d492ca8a9b04b1e2d4e" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Angeles City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_79041ce54586f0bb3cba25ec9b3bd4e4.setContent(html_1dae7dec11e92d492ca8a9b04b1e2d4e);
+            
+        
+
+        circle_marker_33f1a07978165c52834940f2cb32cc22.bindPopup(popup_79041ce54586f0bb3cba25ec9b3bd4e4)
+        ;
+
+        
+    
+    
+            var circle_marker_d97abc8ecb9c97e6dcd011670ad86ad1 = L.circleMarker(
+                [14.5865, 121.1777],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_79ac749141191cb6552f7189ab7c0f91 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c37aa24ca53716d6ff15c2073b9c809 = $(`<div id="html_1c37aa24ca53716d6ff15c2073b9c809" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Antipolo</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_79ac749141191cb6552f7189ab7c0f91.setContent(html_1c37aa24ca53716d6ff15c2073b9c809);
+            
+        
+
+        circle_marker_d97abc8ecb9c97e6dcd011670ad86ad1.bindPopup(popup_79ac749141191cb6552f7189ab7c0f91)
+        ;
+
+        
+    
+    
+            var circle_marker_c4e36d28c78cce20a4264fd064907d2d = L.circleMarker(
+                [10.6713, 122.9511],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_45b5b49dd8f81f4f9d9a21f1d81bfb71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4fb3f9fc15358b63fe1a3c9b9438b823 = $(`<div id="html_4fb3f9fc15358b63fe1a3c9b9438b823" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Bacolod</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_45b5b49dd8f81f4f9d9a21f1d81bfb71.setContent(html_4fb3f9fc15358b63fe1a3c9b9438b823);
+            
+        
+
+        circle_marker_c4e36d28c78cce20a4264fd064907d2d.bindPopup(popup_45b5b49dd8f81f4f9d9a21f1d81bfb71)
+        ;
+
+        
+    
+    
+            var circle_marker_471d6a88b8cdbb4921a58f46419e6ccc = L.circleMarker(
+                [14.4624, 120.9645],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_58d4fd3b78334866e5425e0c332d875f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f9cade633b161282cf096dd6ac0c449 = $(`<div id="html_3f9cade633b161282cf096dd6ac0c449" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Bacoor</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 4</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_58d4fd3b78334866e5425e0c332d875f.setContent(html_3f9cade633b161282cf096dd6ac0c449);
+            
+        
+
+        circle_marker_471d6a88b8cdbb4921a58f46419e6ccc.bindPopup(popup_58d4fd3b78334866e5425e0c332d875f)
+        ;
+
+        
+    
+    
+            var circle_marker_849da3517a766906448b936776f99e26 = L.circleMarker(
+                [10.5388, 122.8384],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_d2b8b9e598300a266dcc1d619c2b5a64 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76fc83f9e38740d05f5a4febf8793126 = $(`<div id="html_76fc83f9e38740d05f5a4febf8793126" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Bago City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_d2b8b9e598300a266dcc1d619c2b5a64.setContent(html_76fc83f9e38740d05f5a4febf8793126);
+            
+        
+
+        circle_marker_849da3517a766906448b936776f99e26.bindPopup(popup_d2b8b9e598300a266dcc1d619c2b5a64)
+        ;
+
+        
+    
+    
+            var circle_marker_3f5f602e8840b415da17f151a85a3f7a = L.circleMarker(
+                [16.4023, 120.596],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_9049395a9cf42b53b8aca8f7d9324c6e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ede1e02bc2fd5cdb963544b4aebe27a7 = $(`<div id="html_ede1e02bc2fd5cdb963544b4aebe27a7" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Baguio</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 5</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_9049395a9cf42b53b8aca8f7d9324c6e.setContent(html_ede1e02bc2fd5cdb963544b4aebe27a7);
+            
+        
+
+        circle_marker_3f5f602e8840b415da17f151a85a3f7a.bindPopup(popup_9049395a9cf42b53b8aca8f7d9324c6e)
+        ;
+
+        
+    
+    
+            var circle_marker_c53082da479c0d32d7f82899601c549f = L.circleMarker(
+                [14.6817, 120.5429],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_336805476eb53441ca0d1d5748687bc6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe9d36c3316e767747f77b6ea634b56c = $(`<div id="html_fe9d36c3316e767747f77b6ea634b56c" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Balanga</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_336805476eb53441ca0d1d5748687bc6.setContent(html_fe9d36c3316e767747f77b6ea634b56c);
+            
+        
+
+        circle_marker_c53082da479c0d32d7f82899601c549f.bindPopup(popup_336805476eb53441ca0d1d5748687bc6)
+        ;
+
+        
+    
+    
+            var circle_marker_208368120b6f390ffa47c03621846193 = L.circleMarker(
+                [18.0545, 120.5648],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_a121580189d722548cbcba312e075e6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74a8210d0739495819cad532a7efcdd6 = $(`<div id="html_74a8210d0739495819cad532a7efcdd6" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Batac City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_a121580189d722548cbcba312e075e6a.setContent(html_74a8210d0739495819cad532a7efcdd6);
+            
+        
+
+        circle_marker_208368120b6f390ffa47c03621846193.bindPopup(popup_a121580189d722548cbcba312e075e6a)
+        ;
+
+        
+    
+    
+            var circle_marker_c6f54e238afce60340542d412588fd37 = L.circleMarker(
+                [13.7565, 121.0583],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_57ea58f3a1fa8eb8be2153081fb4d238 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_520be1328ed4630ce72d4307a67e9bfd = $(`<div id="html_520be1328ed4630ce72d4307a67e9bfd" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Batangas City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_57ea58f3a1fa8eb8be2153081fb4d238.setContent(html_520be1328ed4630ce72d4307a67e9bfd);
+            
+        
+
+        circle_marker_c6f54e238afce60340542d412588fd37.bindPopup(popup_57ea58f3a1fa8eb8be2153081fb4d238)
+        ;
+
+        
+    
+    
+            var circle_marker_f165be98957c528ad1e8aafa9d29f7f9 = L.circleMarker(
+                [9.3689, 122.8067],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_e8bb48e478aa1cc84e298f5088766d56 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a8590d4d0899b03edbeaaf49631c391e = $(`<div id="html_a8590d4d0899b03edbeaaf49631c391e" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Bayawan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_e8bb48e478aa1cc84e298f5088766d56.setContent(html_a8590d4d0899b03edbeaaf49631c391e);
+            
+        
+
+        circle_marker_f165be98957c528ad1e8aafa9d29f7f9.bindPopup(popup_e8bb48e478aa1cc84e298f5088766d56)
+        ;
+
+        
+    
+    
+            var circle_marker_1af9bf554977c7a2fdb126f4f0dc94a9 = L.circleMarker(
+                [10.6833, 124.8],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_d8c657e32d22341a4741776b3fb5f6bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a1b94ab3ea150a53aaa9be4e788a0718 = $(`<div id="html_a1b94ab3ea150a53aaa9be4e788a0718" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Baybay</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_d8c657e32d22341a4741776b3fb5f6bd.setContent(html_a1b94ab3ea150a53aaa9be4e788a0718);
+            
+        
+
+        circle_marker_1af9bf554977c7a2fdb126f4f0dc94a9.bindPopup(popup_d8c657e32d22341a4741776b3fb5f6bd)
+        ;
+
+        
+    
+    
+            var circle_marker_ccb7d5bd4ea68dc64d14dbbb401a9515 = L.circleMarker(
+                [8.7147, 125.7469],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_904aced2857bf90d7800edb14473f823 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1b6f646658376f400858b8e155e98dfc = $(`<div id="html_1b6f646658376f400858b8e155e98dfc" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Bayugan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_904aced2857bf90d7800edb14473f823.setContent(html_1b6f646658376f400858b8e155e98dfc);
+            
+        
+
+        circle_marker_ccb7d5bd4ea68dc64d14dbbb401a9515.bindPopup(popup_904aced2857bf90d7800edb14473f823)
+        ;
+
+        
+    
+    
+            var circle_marker_ee9de24f569b0c69c69ca770611b3092 = L.circleMarker(
+                [8.1833, 126.35],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_9e6ffac00611e08897867c853e62ce3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01c93fabe4273e63a91f4ee218370038 = $(`<div id="html_01c93fabe4273e63a91f4ee218370038" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Bislig</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_9e6ffac00611e08897867c853e62ce3f.setContent(html_01c93fabe4273e63a91f4ee218370038);
+            
+        
+
+        circle_marker_ee9de24f569b0c69c69ca770611b3092.bindPopup(popup_9e6ffac00611e08897867c853e62ce3f)
+        ;
+
+        
+    
+    
+            var circle_marker_a4760134a720e20834259ac3a2db31ed = L.circleMarker(
+                [14.3333, 121.0833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_2e32bce7f6154e832ccaac0ede72ad2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03f3b029a44006688049044ee6e45472 = $(`<div id="html_03f3b029a44006688049044ee6e45472" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Biñan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_2e32bce7f6154e832ccaac0ede72ad2d.setContent(html_03f3b029a44006688049044ee6e45472);
+            
+        
+
+        circle_marker_a4760134a720e20834259ac3a2db31ed.bindPopup(popup_2e32bce7f6154e832ccaac0ede72ad2d)
+        ;
+
+        
+    
+    
+            var circle_marker_21c48450f28818f1293f8777c56f7a5d = L.circleMarker(
+                [11.0167, 124.0],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_fe3c2080c5402b9ea3826ab2bf898f0a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b1215a230ff87a036f3c04dbffeadb5 = $(`<div id="html_5b1215a230ff87a036f3c04dbffeadb5" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Bogo</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_fe3c2080c5402b9ea3826ab2bf898f0a.setContent(html_5b1215a230ff87a036f3c04dbffeadb5);
+            
+        
+
+        circle_marker_21c48450f28818f1293f8777c56f7a5d.bindPopup(popup_fe3c2080c5402b9ea3826ab2bf898f0a)
+        ;
+
+        
+    
+    
+            var circle_marker_b1a1a87a55a59ebf8f211ce466683528 = L.circleMarker(
+                [11.6, 125.4333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_0068d397a7f17a02bf8fa586494bdeb1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad7700c8260ccbb7291bf65ca759c3cc = $(`<div id="html_ad7700c8260ccbb7291bf65ca759c3cc" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Borongan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_0068d397a7f17a02bf8fa586494bdeb1.setContent(html_ad7700c8260ccbb7291bf65ca759c3cc);
+            
+        
+
+        circle_marker_b1a1a87a55a59ebf8f211ce466683528.bindPopup(popup_0068d397a7f17a02bf8fa586494bdeb1)
+        ;
+
+        
+    
+    
+            var circle_marker_45900f5293df78e51400cbfb78b38bc8 = L.circleMarker(
+                [8.9494, 125.5436],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_38156997d08561533a4a42a0a5b65cd0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e06e68a17a84d2dd7a106a19e266788 = $(`<div id="html_5e06e68a17a84d2dd7a106a19e266788" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Butuan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_38156997d08561533a4a42a0a5b65cd0.setContent(html_5e06e68a17a84d2dd7a106a19e266788);
+            
+        
+
+        circle_marker_45900f5293df78e51400cbfb78b38bc8.bindPopup(popup_38156997d08561533a4a42a0a5b65cd0)
+        ;
+
+        
+    
+    
+            var circle_marker_069cf2cc5b3b37aa306f3f6fa7fd933c = L.circleMarker(
+                [9.1228, 125.5346],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_b34ea7708699082fccd9a47da635e3ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_737d026e798157c28010d722901e833b = $(`<div id="html_737d026e798157c28010d722901e833b" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Cabadbaran</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_b34ea7708699082fccd9a47da635e3ae.setContent(html_737d026e798157c28010d722901e833b);
+            
+        
+
+        circle_marker_069cf2cc5b3b37aa306f3f6fa7fd933c.bindPopup(popup_b34ea7708699082fccd9a47da635e3ae)
+        ;
+
+        
+    
+    
+            var circle_marker_c88ce634e1951ece777bab467f02185b = L.circleMarker(
+                [15.4868, 120.9651],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_e2279930fe62cfc1e31bcad781b28a4e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0fbce302e3bc17f2005c1e0116d94a67 = $(`<div id="html_0fbce302e3bc17f2005c1e0116d94a67" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Cabanatuan City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_e2279930fe62cfc1e31bcad781b28a4e.setContent(html_0fbce302e3bc17f2005c1e0116d94a67);
+            
+        
+
+        circle_marker_c88ce634e1951ece777bab467f02185b.bindPopup(popup_e2279930fe62cfc1e31bcad781b28a4e)
+        ;
+
+        
+    
+    
+            var circle_marker_1848e6ce236ed1368ed2bce450f90ec2 = L.circleMarker(
+                [14.2724, 121.1275],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_8198bb20d71a3e2bc584c66141d0aceb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59af7ed95bbd4bb3fc5d9e429e8bb39c = $(`<div id="html_59af7ed95bbd4bb3fc5d9e429e8bb39c" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Cabuyao</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_8198bb20d71a3e2bc584c66141d0aceb.setContent(html_59af7ed95bbd4bb3fc5d9e429e8bb39c);
+            
+        
+
+        circle_marker_1848e6ce236ed1368ed2bce450f90ec2.bindPopup(popup_8198bb20d71a3e2bc584c66141d0aceb)
+        ;
+
+        
+    
+    
+            var circle_marker_1d2593bdbea11f8666575fa34fcad163 = L.circleMarker(
+                [10.95, 123.3],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_2aff08c612067e31e3c422afb74c4ee0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9349fde9507f734d25c792002cda4928 = $(`<div id="html_9349fde9507f734d25c792002cda4928" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Cadiz</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_2aff08c612067e31e3c422afb74c4ee0.setContent(html_9349fde9507f734d25c792002cda4928);
+            
+        
+
+        circle_marker_1d2593bdbea11f8666575fa34fcad163.bindPopup(popup_2aff08c612067e31e3c422afb74c4ee0)
+        ;
+
+        
+    
+    
+            var circle_marker_1aa1a334a092c303e7512900ede6902d = L.circleMarker(
+                [8.4542, 124.6319],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_1c4aeadbbdc42b2473bdcfe22dfc407f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9f7f6e8b32318078ee80d441f877e14 = $(`<div id="html_d9f7f6e8b32318078ee80d441f877e14" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Cagayan de Oro</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_1c4aeadbbdc42b2473bdcfe22dfc407f.setContent(html_d9f7f6e8b32318078ee80d441f877e14);
+            
+        
+
+        circle_marker_1aa1a334a092c303e7512900ede6902d.bindPopup(popup_1c4aeadbbdc42b2473bdcfe22dfc407f)
+        ;
+
+        
+    
+    
+            var circle_marker_d87bc285e0b3daeb34e2736c6a5498e4 = L.circleMarker(
+                [13.9278, 120.8083],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_593cc5e05b36634100dcf05eba90172a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc7488cb2f7ce93416a3f1c8276f5fd9 = $(`<div id="html_bc7488cb2f7ce93416a3f1c8276f5fd9" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Calaca</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_593cc5e05b36634100dcf05eba90172a.setContent(html_bc7488cb2f7ce93416a3f1c8276f5fd9);
+            
+        
+
+        circle_marker_d87bc285e0b3daeb34e2736c6a5498e4.bindPopup(popup_593cc5e05b36634100dcf05eba90172a)
+        ;
+
+        
+    
+    
+            var circle_marker_6124aea784a0d103dc780746b0338d77 = L.circleMarker(
+                [14.2167, 121.1667],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_7ed27b69d68fee1304136d9745dd36db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf34267521a93a48c8b4591b2ebc78ef = $(`<div id="html_cf34267521a93a48c8b4591b2ebc78ef" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Calamba</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 4</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_7ed27b69d68fee1304136d9745dd36db.setContent(html_cf34267521a93a48c8b4591b2ebc78ef);
+            
+        
+
+        circle_marker_6124aea784a0d103dc780746b0338d77.bindPopup(popup_7ed27b69d68fee1304136d9745dd36db)
+        ;
+
+        
+    
+    
+            var circle_marker_59023222907c7a3fccd548fc528a34b7 = L.circleMarker(
+                [13.4101, 121.1828],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_2dc4752e48b9c86712b84405ea8a23d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f96e510885811966aa56e6b144efc17 = $(`<div id="html_7f96e510885811966aa56e6b144efc17" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Calapan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_2dc4752e48b9c86712b84405ea8a23d3.setContent(html_7f96e510885811966aa56e6b144efc17);
+            
+        
+
+        circle_marker_59023222907c7a3fccd548fc528a34b7.bindPopup(popup_2dc4752e48b9c86712b84405ea8a23d3)
+        ;
+
+        
+    
+    
+            var circle_marker_1a8ac588de346d712a69049fb3785461 = L.circleMarker(
+                [12.0672, 124.6042],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_56b5254464a905ac740640b6e5123f35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4ea1aa43bc0bb7ce25e7259b6b9c594 = $(`<div id="html_d4ea1aa43bc0bb7ce25e7259b6b9c594" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Calbayog City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_56b5254464a905ac740640b6e5123f35.setContent(html_d4ea1aa43bc0bb7ce25e7259b6b9c594);
+            
+        
+
+        circle_marker_1a8ac588de346d712a69049fb3785461.bindPopup(popup_56b5254464a905ac740640b6e5123f35)
+        ;
+
+        
+    
+    
+            var circle_marker_f2869f3898a1102fd4c03ac54b521d10 = L.circleMarker(
+                [14.65, 120.9667],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_2a5bc7cbc5bf4430ec1a3cac5b6c204e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55792e41399496b2253c49c6dff3f247 = $(`<div id="html_55792e41399496b2253c49c6dff3f247" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Caloocan City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_2a5bc7cbc5bf4430ec1a3cac5b6c204e.setContent(html_55792e41399496b2253c49c6dff3f247);
+            
+        
+
+        circle_marker_f2869f3898a1102fd4c03ac54b521d10.bindPopup(popup_2a5bc7cbc5bf4430ec1a3cac5b6c204e)
+        ;
+
+        
+    
+    
+            var circle_marker_811dda85e55bc19e8dce7131fe590c55 = L.circleMarker(
+                [17.1961, 120.4502],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_fe40e0ae3e05559ee9a2b2361895e02d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4d5268ab5c7b9312c51875d53d05acf = $(`<div id="html_b4d5268ab5c7b9312c51875d53d05acf" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Candon</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_fe40e0ae3e05559ee9a2b2361895e02d.setContent(html_b4d5268ab5c7b9312c51875d53d05acf);
+            
+        
+
+        circle_marker_811dda85e55bc19e8dce7131fe590c55.bindPopup(popup_fe40e0ae3e05559ee9a2b2361895e02d)
+        ;
+
+        
+    
+    
+            var circle_marker_444add4ddd0c62bdf6259ffb699b3db2 = L.circleMarker(
+                [10.3833, 123.2],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_7135ad62f51607a71eff7ca97274974e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2aa5f1116a54aac874f282124203065 = $(`<div id="html_f2aa5f1116a54aac874f282124203065" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Canlaon</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_7135ad62f51607a71eff7ca97274974e.setContent(html_f2aa5f1116a54aac874f282124203065);
+            
+        
+
+        circle_marker_444add4ddd0c62bdf6259ffb699b3db2.bindPopup(popup_7135ad62f51607a71eff7ca97274974e)
+        ;
+
+        
+    
+    
+            var circle_marker_047a3a26c7c7033b8ea3bbaf476aaefc = L.circleMarker(
+                [10.1056, 123.6422],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_3cd164f00f5907d6f41f46c258e21aad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f543d01dbdaa74fa8a696842edbe0e40 = $(`<div id="html_f543d01dbdaa74fa8a696842edbe0e40" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Carcar</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_3cd164f00f5907d6f41f46c258e21aad.setContent(html_f543d01dbdaa74fa8a696842edbe0e40);
+            
+        
+
+        circle_marker_047a3a26c7c7033b8ea3bbaf476aaefc.bindPopup(popup_3cd164f00f5907d6f41f46c258e21aad)
+        ;
+
+        
+    
+    
+            var circle_marker_6f96ffd1ae0c9cf2e94665d629541945 = L.circleMarker(
+                [14.3167, 121.05],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_64b1f857b2c709d6d7bd5bd45964c24c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84ea8bbfa4a3678a9ce1ef4d2eb4947b = $(`<div id="html_84ea8bbfa4a3678a9ce1ef4d2eb4947b" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Carmona</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_64b1f857b2c709d6d7bd5bd45964c24c.setContent(html_84ea8bbfa4a3678a9ce1ef4d2eb4947b);
+            
+        
+
+        circle_marker_6f96ffd1ae0c9cf2e94665d629541945.bindPopup(popup_64b1f857b2c709d6d7bd5bd45964c24c)
+        ;
+
+        
+    
+    
+            var circle_marker_309588ae4d0f95bb765611a2bf532710 = L.circleMarker(
+                [11.7752, 124.8864],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_cba792122f8ee03632e773e99713331d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbea3455a3053f59c02bd3e2270c7167 = $(`<div id="html_bbea3455a3053f59c02bd3e2270c7167" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Catbalogan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_cba792122f8ee03632e773e99713331d.setContent(html_bbea3455a3053f59c02bd3e2270c7167);
+            
+        
+
+        circle_marker_309588ae4d0f95bb765611a2bf532710.bindPopup(popup_cba792122f8ee03632e773e99713331d)
+        ;
+
+        
+    
+    
+            var circle_marker_e8a87c45dbf9472667691a41fec23f4c = L.circleMarker(
+                [16.9342, 121.7642],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_df729b2bbf3c9ac546c82bb7a28854fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7931d407782b0c6294c7c1f6c6244bad = $(`<div id="html_7931d407782b0c6294c7c1f6c6244bad" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Cauayan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_df729b2bbf3c9ac546c82bb7a28854fa.setContent(html_7931d407782b0c6294c7c1f6c6244bad);
+            
+        
+
+        circle_marker_e8a87c45dbf9472667691a41fec23f4c.bindPopup(popup_df729b2bbf3c9ac546c82bb7a28854fa)
+        ;
+
+        
+    
+    
+            var circle_marker_a4a8e9b907e71be02666086e928df321 = L.circleMarker(
+                [14.4791, 120.8981],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_7caf485e0b4f51b13610c674c0c488a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a63a1e0abed38b23975faa3cdafb2df8 = $(`<div id="html_a63a1e0abed38b23975faa3cdafb2df8" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Cavite City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_7caf485e0b4f51b13610c674c0c488a3.setContent(html_a63a1e0abed38b23975faa3cdafb2df8);
+            
+        
+
+        circle_marker_a4a8e9b907e71be02666086e928df321.bindPopup(popup_7caf485e0b4f51b13610c674c0c488a3)
+        ;
+
+        
+    
+    
+            var circle_marker_4c8bbc0e589e4f25d61b9225956c673b = L.circleMarker(
+                [10.3157, 123.8854],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_8dae2b551aa1523e906554342168052c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6cf858dbd397b4e58c4202dd8f363c8 = $(`<div id="html_a6cf858dbd397b4e58c4202dd8f363c8" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Cebu City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_8dae2b551aa1523e906554342168052c.setContent(html_a6cf858dbd397b4e58c4202dd8f363c8);
+            
+        
+
+        circle_marker_4c8bbc0e589e4f25d61b9225956c673b.bindPopup(popup_8dae2b551aa1523e906554342168052c)
+        ;
+
+        
+    
+    
+            var circle_marker_39a89159de094ca7f9758c62bfedd807 = L.circleMarker(
+                [14.6507, 121.1029],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_8285695e91cb0bd93a95ac1fa51e88da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9dc753de4804c0d76aec7487f5dcf9c = $(`<div id="html_d9dc753de4804c0d76aec7487f5dcf9c" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>City of Marikina</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 4</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_8285695e91cb0bd93a95ac1fa51e88da.setContent(html_d9dc753de4804c0d76aec7487f5dcf9c);
+            
+        
+
+        circle_marker_39a89159de094ca7f9758c62bfedd807.bindPopup(popup_8285695e91cb0bd93a95ac1fa51e88da)
+        ;
+
+        
+    
+    
+            var circle_marker_ba6b23b8b96a976c88ec877ddcc14cc5 = L.circleMarker(
+                [12.3687, 123.613],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_e85c089685a579051f40a053f2e2fd61 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_350f7a148c0b83228d44e852ae836bbf = $(`<div id="html_350f7a148c0b83228d44e852ae836bbf" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>City of Masbate</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_e85c089685a579051f40a053f2e2fd61.setContent(html_350f7a148c0b83228d44e852ae836bbf);
+            
+        
+
+        circle_marker_ba6b23b8b96a976c88ec877ddcc14cc5.bindPopup(popup_e85c089685a579051f40a053f2e2fd61)
+        ;
+
+        
+    
+    
+            var circle_marker_59b41e672950846f44b36751671af202 = L.circleMarker(
+                [11.1, 122.6333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_46d16eb7568162dbd11de9c4b81e38b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7bddcbd77b9d561293633e4130928424 = $(`<div id="html_7bddcbd77b9d561293633e4130928424" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>City of Passi</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_46d16eb7568162dbd11de9c4b81e38b2.setContent(html_7bddcbd77b9d561293633e4130928424);
+            
+        
+
+        circle_marker_59b41e672950846f44b36751671af202.bindPopup(popup_46d16eb7568162dbd11de9c4b81e38b2)
+        ;
+
+        
+    
+    
+            var circle_marker_a8c5debeb6d5ae89259614b79e34d534 = L.circleMarker(
+                [12.9714, 124.0069],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_c23d9922a5946f6914d4c397a639e381 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_612f8113384a960aff91c5866ed82e5e = $(`<div id="html_612f8113384a960aff91c5866ed82e5e" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>City of Sorsogon</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_c23d9922a5946f6914d4c397a639e381.setContent(html_612f8113384a960aff91c5866ed82e5e);
+            
+        
+
+        circle_marker_a8c5debeb6d5ae89259614b79e34d534.bindPopup(popup_c23d9922a5946f6914d4c397a639e381)
+        ;
+
+        
+    
+    
+            var circle_marker_f83bb2921467ad7bb82d316b1b715e49 = L.circleMarker(
+                [7.2167, 124.25],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_ccc479e6f0654172b7b123d0b3af30c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_021843f2e54211a2e34d486be9989f23 = $(`<div id="html_021843f2e54211a2e34d486be9989f23" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Cotabato</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_ccc479e6f0654172b7b123d0b3af30c5.setContent(html_021843f2e54211a2e34d486be9989f23);
+            
+        
+
+        circle_marker_f83bb2921467ad7bb82d316b1b715e49.bindPopup(popup_ccc479e6f0654172b7b123d0b3af30c5)
+        ;
+
+        
+    
+    
+            var circle_marker_cfb1cd15d0405dace2d2b1846c9aa82f = L.circleMarker(
+                [16.0478, 120.3337],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_e7505ad5a8795f6ed930fa9977e56f54 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_194c598350713b892b3fd651512cf739 = $(`<div id="html_194c598350713b892b3fd651512cf739" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Dagupan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_e7505ad5a8795f6ed930fa9977e56f54.setContent(html_194c598350713b892b3fd651512cf739);
+            
+        
+
+        circle_marker_cfb1cd15d0405dace2d2b1846c9aa82f.bindPopup(popup_e7505ad5a8795f6ed930fa9977e56f54)
+        ;
+
+        
+    
+    
+            var circle_marker_9312458ab8b0bff4b54fac702aa0f505 = L.circleMarker(
+                [10.5333, 124.0333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_40922d4d54458b9ef0ed3ee5e88f6ee5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa41cadc0484c2b8ade99d6a370b6097 = $(`<div id="html_fa41cadc0484c2b8ade99d6a370b6097" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Danao</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_40922d4d54458b9ef0ed3ee5e88f6ee5.setContent(html_fa41cadc0484c2b8ade99d6a370b6097);
+            
+        
+
+        circle_marker_9312458ab8b0bff4b54fac702aa0f505.bindPopup(popup_40922d4d54458b9ef0ed3ee5e88f6ee5)
+        ;
+
+        
+    
+    
+            var circle_marker_07ebbb7a858b631fe4e50d4e91f5a883 = L.circleMarker(
+                [8.65, 123.4167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_900f00380489acc56b9608d85dce3029 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f25c82a4925463a6e02ade7f9251cbb3 = $(`<div id="html_f25c82a4925463a6e02ade7f9251cbb3" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Dapitan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_900f00380489acc56b9608d85dce3029.setContent(html_f25c82a4925463a6e02ade7f9251cbb3);
+            
+        
+
+        circle_marker_07ebbb7a858b631fe4e50d4e91f5a883.bindPopup(popup_900f00380489acc56b9608d85dce3029)
+        ;
+
+        
+    
+    
+            var circle_marker_8383b7d0d78dfeea947496a52cab2970 = L.circleMarker(
+                [14.3294, 120.9367],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_3db1bc948f2a302bf53c4e271a8cd209 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93e20b46bcec5fa2ba58a40d267cc543 = $(`<div id="html_93e20b46bcec5fa2ba58a40d267cc543" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Dasmariñas</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_3db1bc948f2a302bf53c4e271a8cd209.setContent(html_93e20b46bcec5fa2ba58a40d267cc543);
+            
+        
+
+        circle_marker_8383b7d0d78dfeea947496a52cab2970.bindPopup(popup_3db1bc948f2a302bf53c4e271a8cd209)
+        ;
+
+        
+    
+    
+            var circle_marker_45d2a109ebe308d64b376289004465f2 = L.circleMarker(
+                [7.0707, 125.6087],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_9cb8edfbc14e036e310dca1e538425be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82c102b8d280950317192c8b4b6d33fc = $(`<div id="html_82c102b8d280950317192c8b4b6d33fc" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Davao</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_9cb8edfbc14e036e310dca1e538425be.setContent(html_82c102b8d280950317192c8b4b6d33fc);
+            
+        
+
+        circle_marker_45d2a109ebe308d64b376289004465f2.bindPopup(popup_9cb8edfbc14e036e310dca1e538425be)
+        ;
+
+        
+    
+    
+            var circle_marker_705cd24d1c34db323160e116e6a7990f = L.circleMarker(
+                [6.75, 125.35],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_a4522bb11fa6eb15a34ccd143dbc6f6e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_422e7caffedbfcb45f0f89ac1c9da26b = $(`<div id="html_422e7caffedbfcb45f0f89ac1c9da26b" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Digos</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_a4522bb11fa6eb15a34ccd143dbc6f6e.setContent(html_422e7caffedbfcb45f0f89ac1c9da26b);
+            
+        
+
+        circle_marker_705cd24d1c34db323160e116e6a7990f.bindPopup(popup_a4522bb11fa6eb15a34ccd143dbc6f6e)
+        ;
+
+        
+    
+    
+            var circle_marker_e4090d9600fb9b5f4751c2246f55a798 = L.circleMarker(
+                [8.5667, 123.3333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_4a8f2d83ada410d27527c20adbd976ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_570944986d60c91353869a8976b0522f = $(`<div id="html_570944986d60c91353869a8976b0522f" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Dipolog</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_4a8f2d83ada410d27527c20adbd976ab.setContent(html_570944986d60c91353869a8976b0522f);
+            
+        
+
+        circle_marker_e4090d9600fb9b5f4751c2246f55a798.bindPopup(popup_4a8f2d83ada410d27527c20adbd976ab)
+        ;
+
+        
+    
+    
+            var circle_marker_8804e2caf7de902a431bda8bda54728e = L.circleMarker(
+                [9.3103, 123.3081],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_98b5b6d7b07f7f02bbffb7c69d4551b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9aeb8930d24682685be466593566d40 = $(`<div id="html_c9aeb8930d24682685be466593566d40" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Dumaguete</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_98b5b6d7b07f7f02bbffb7c69d4551b6.setContent(html_c9aeb8930d24682685be466593566d40);
+            
+        
+
+        circle_marker_8804e2caf7de902a431bda8bda54728e.bindPopup(popup_98b5b6d7b07f7f02bbffb7c69d4551b6)
+        ;
+
+        
+    
+    
+            var circle_marker_f6911aee23f8df80df1b9ee081a57130 = L.circleMarker(
+                [8.5667, 124.5167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_6e6287668f5b7862699e73be0353df6c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd692501ef7db1db98912182a4c1d8c9 = $(`<div id="html_dd692501ef7db1db98912182a4c1d8c9" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>El Salvador</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_6e6287668f5b7862699e73be0353df6c.setContent(html_dd692501ef7db1db98912182a4c1d8c9);
+            
+        
+
+        circle_marker_f6911aee23f8df80df1b9ee081a57130.bindPopup(popup_6e6287668f5b7862699e73be0353df6c)
+        ;
+
+        
+    
+    
+            var circle_marker_a21b02e36679aa4a00782028a7f2a800 = L.circleMarker(
+                [10.8333, 123.5],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_e82760a373a0dc1d40ff8a6758ed6570 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18bb7753e28976035c1a5ecdbecab790 = $(`<div id="html_18bb7753e28976035c1a5ecdbecab790" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Escalante</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_e82760a373a0dc1d40ff8a6758ed6570.setContent(html_18bb7753e28976035c1a5ecdbecab790);
+            
+        
+
+        circle_marker_a21b02e36679aa4a00782028a7f2a800.bindPopup(popup_e82760a373a0dc1d40ff8a6758ed6570)
+        ;
+
+        
+    
+    
+            var circle_marker_3b76fa1cb1d9c2383db719ed904634cb = L.circleMarker(
+                [15.3079, 120.947],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_1ed3f72cd2756fd4f5627cbbb8838b0b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_67a42cf1d176bb09098a584511a973d6 = $(`<div id="html_67a42cf1d176bb09098a584511a973d6" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Gapan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_1ed3f72cd2756fd4f5627cbbb8838b0b.setContent(html_67a42cf1d176bb09098a584511a973d6);
+            
+        
+
+        circle_marker_3b76fa1cb1d9c2383db719ed904634cb.bindPopup(popup_1ed3f72cd2756fd4f5627cbbb8838b0b)
+        ;
+
+        
+    
+    
+            var circle_marker_01e64a208b588980766842299c47019e = L.circleMarker(
+                [6.1167, 125.1667],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_daca7f3c0997cc4484dffef517d4b171 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20ce8f8c2ec5e868c5c9c360ca9bffda = $(`<div id="html_20ce8f8c2ec5e868c5c9c360ca9bffda" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>General Santos</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_daca7f3c0997cc4484dffef517d4b171.setContent(html_20ce8f8c2ec5e868c5c9c360ca9bffda);
+            
+        
+
+        circle_marker_01e64a208b588980766842299c47019e.bindPopup(popup_daca7f3c0997cc4484dffef517d4b171)
+        ;
+
+        
+    
+    
+            var circle_marker_f7162a719c78cc36bb09740654ae438e = L.circleMarker(
+                [14.3833, 120.8833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_40db5e56bd3f1fdb833b41c4246a3669 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e370f52450b4ca19e20b7a6ee5ad1bbc = $(`<div id="html_e370f52450b4ca19e20b7a6ee5ad1bbc" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>General Trias</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 5</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_40db5e56bd3f1fdb833b41c4246a3669.setContent(html_e370f52450b4ca19e20b7a6ee5ad1bbc);
+            
+        
+
+        circle_marker_f7162a719c78cc36bb09740654ae438e.bindPopup(popup_40db5e56bd3f1fdb833b41c4246a3669)
+        ;
+
+        
+    
+    
+            var circle_marker_cd760e4423cce80a9f410529807884e2 = L.circleMarker(
+                [8.8333, 125.1],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_c207f8bd5558f2b65187db8947387038 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5c4fb54ec53f7daa3ff3d6bd16e04086 = $(`<div id="html_5c4fb54ec53f7daa3ff3d6bd16e04086" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Gingoog City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_c207f8bd5558f2b65187db8947387038.setContent(html_5c4fb54ec53f7daa3ff3d6bd16e04086);
+            
+        
+
+        circle_marker_cd760e4423cce80a9f410529807884e2.bindPopup(popup_c207f8bd5558f2b65187db8947387038)
+        ;
+
+        
+    
+    
+            var circle_marker_194a9a5d953993938471cd8dae05045f = L.circleMarker(
+                [10.1, 122.8667],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_f644d5853db28e78d1d584d4afd024ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e31ceafff39ab221ac7b0303cce82452 = $(`<div id="html_e31ceafff39ab221ac7b0303cce82452" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Himamaylan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_f644d5853db28e78d1d584d4afd024ec.setContent(html_e31ceafff39ab221ac7b0303cce82452);
+            
+        
+
+        circle_marker_194a9a5d953993938471cd8dae05045f.bindPopup(popup_f644d5853db28e78d1d584d4afd024ec)
+        ;
+
+        
+    
+    
+            var circle_marker_7a8ba471943f547f43fd52ad02f31be5 = L.circleMarker(
+                [17.1333, 121.8833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_3d0f616e6daa15150a5ea9d3bfa2612a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_225b03b3829412ef4f26f3d339224cc1 = $(`<div id="html_225b03b3829412ef4f26f3d339224cc1" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Ilagan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_3d0f616e6daa15150a5ea9d3bfa2612a.setContent(html_225b03b3829412ef4f26f3d339224cc1);
+            
+        
+
+        circle_marker_7a8ba471943f547f43fd52ad02f31be5.bindPopup(popup_3d0f616e6daa15150a5ea9d3bfa2612a)
+        ;
+
+        
+    
+    
+            var circle_marker_6132b6cd669715ecd2c1eb4382c1a13c = L.circleMarker(
+                [8.2333, 124.25],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_81237154b00d3be527c79ccd3d807432 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d45081559947905e025ada4303c1f6a = $(`<div id="html_7d45081559947905e025ada4303c1f6a" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Iligan City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_81237154b00d3be527c79ccd3d807432.setContent(html_7d45081559947905e025ada4303c1f6a);
+            
+        
+
+        circle_marker_6132b6cd669715ecd2c1eb4382c1a13c.bindPopup(popup_81237154b00d3be527c79ccd3d807432)
+        ;
+
+        
+    
+    
+            var circle_marker_f806b9fc804e3116faaa3980aee736f0 = L.circleMarker(
+                [10.7202, 122.5621],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_037de88dd7362adcc1e8a2a5b855b558 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca66a47ac1c9e8c794e1cfe6e08323bf = $(`<div id="html_ca66a47ac1c9e8c794e1cfe6e08323bf" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Iloilo City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_037de88dd7362adcc1e8a2a5b855b558.setContent(html_ca66a47ac1c9e8c794e1cfe6e08323bf);
+            
+        
+
+        circle_marker_f806b9fc804e3116faaa3980aee736f0.bindPopup(popup_037de88dd7362adcc1e8a2a5b855b558)
+        ;
+
+        
+    
+    
+            var circle_marker_5090c3cb19c3e2c5ed0a0fe24d527ec0 = L.circleMarker(
+                [14.4299, 120.9367],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_fc26d7989950be74c57efadc62c61bef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e83786badf2607db1abaf806ef4714d8 = $(`<div id="html_e83786badf2607db1abaf806ef4714d8" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Imus</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_fc26d7989950be74c57efadc62c61bef.setContent(html_e83786badf2607db1abaf806ef4714d8);
+            
+        
+
+        circle_marker_5090c3cb19c3e2c5ed0a0fe24d527ec0.bindPopup(popup_fc26d7989950be74c57efadc62c61bef)
+        ;
+
+        
+    
+    
+            var circle_marker_8dc23cb5220899798a671b1865a69ccf = L.circleMarker(
+                [13.4167, 123.4167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_d6276d7bc23fc29750aedc63f5bdd9aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fcc50a25036c47b6e1d2baa99de02ee = $(`<div id="html_7fcc50a25036c47b6e1d2baa99de02ee" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Iriga City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_d6276d7bc23fc29750aedc63f5bdd9aa.setContent(html_7fcc50a25036c47b6e1d2baa99de02ee);
+            
+        
+
+        circle_marker_8dc23cb5220899798a671b1865a69ccf.bindPopup(popup_d6276d7bc23fc29750aedc63f5bdd9aa)
+        ;
+
+        
+    
+    
+            var circle_marker_afe4e77e95f31b06487b46288016c2d2 = L.circleMarker(
+                [10.2, 122.9833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_0d714b61c72e20cc759ab9ca737a84ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b592bc6ee60cc272b0e5b81e04cb903 = $(`<div id="html_7b592bc6ee60cc272b0e5b81e04cb903" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Isabela</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_0d714b61c72e20cc759ab9ca737a84ef.setContent(html_7b592bc6ee60cc272b0e5b81e04cb903);
+            
+        
+
+        circle_marker_afe4e77e95f31b06487b46288016c2d2.bindPopup(popup_0d714b61c72e20cc759ab9ca737a84ef)
+        ;
+
+        
+    
+    
+            var circle_marker_4ee9e82e1e58ec89a6dbacd84f38c21d = L.circleMarker(
+                [9.9833, 122.8167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_dd6f83c9737cad375bfa112fcbf92ce9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b8f1f6f532a6e5f740da9f03fc96504 = $(`<div id="html_8b8f1f6f532a6e5f740da9f03fc96504" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Kabankalan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_dd6f83c9737cad375bfa112fcbf92ce9.setContent(html_8b8f1f6f532a6e5f740da9f03fc96504);
+            
+        
+
+        circle_marker_4ee9e82e1e58ec89a6dbacd84f38c21d.bindPopup(popup_dd6f83c9737cad375bfa112fcbf92ce9)
+        ;
+
+        
+    
+    
+            var circle_marker_2dc91d01efccc9cf4d1e86cb623ec786 = L.circleMarker(
+                [7.0167, 125.0833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_4ba0fd9d9119271834d27f6d28eb9a74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b3ce801bc887e1c5aee329fc32b86a2 = $(`<div id="html_6b3ce801bc887e1c5aee329fc32b86a2" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Kidapawan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_4ba0fd9d9119271834d27f6d28eb9a74.setContent(html_6b3ce801bc887e1c5aee329fc32b86a2);
+            
+        
+
+        circle_marker_2dc91d01efccc9cf4d1e86cb623ec786.bindPopup(popup_4ba0fd9d9119271834d27f6d28eb9a74)
+        ;
+
+        
+    
+    
+            var circle_marker_e7be25c69c23240f5c9d6419fd5c16de = L.circleMarker(
+                [6.5, 124.8333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_462a0e9e550fe9853e3a0d7baf830a14 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5224ef38ba5ee3aba9377ca5e67e6184 = $(`<div id="html_5224ef38ba5ee3aba9377ca5e67e6184" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Koronadal</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_462a0e9e550fe9853e3a0d7baf830a14.setContent(html_5224ef38ba5ee3aba9377ca5e67e6184);
+            
+        
+
+        circle_marker_e7be25c69c23240f5c9d6419fd5c16de.bindPopup(popup_462a0e9e550fe9853e3a0d7baf830a14)
+        ;
+
+        
+    
+    
+            var circle_marker_6b1ee093db27e590ba286d3f368baf78 = L.circleMarker(
+                [10.4167, 122.9167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_b6fecd5c8cf87631d10d381e6fbdf391 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9034fd3df77b7d917e499a1699461454 = $(`<div id="html_9034fd3df77b7d917e499a1699461454" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>La Carlota</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_b6fecd5c8cf87631d10d381e6fbdf391.setContent(html_9034fd3df77b7d917e499a1699461454);
+            
+        
+
+        circle_marker_6b1ee093db27e590ba286d3f368baf78.bindPopup(popup_b6fecd5c8cf87631d10d381e6fbdf391)
+        ;
+
+        
+    
+    
+            var circle_marker_6b65b0b886e6921c325423c6c8d32746 = L.circleMarker(
+                [6.65, 122.1333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_0bdca5dca70391255fb240ec421e5041 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_654237c208a6609be295ed28a633ed0b = $(`<div id="html_654237c208a6609be295ed28a633ed0b" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Lamitan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_0bdca5dca70391255fb240ec421e5041.setContent(html_654237c208a6609be295ed28a633ed0b);
+            
+        
+
+        circle_marker_6b65b0b886e6921c325423c6c8d32746.bindPopup(popup_0bdca5dca70391255fb240ec421e5041)
+        ;
+
+        
+    
+    
+            var circle_marker_98c9fbd0e3eed7244baab6b9d1403a58 = L.circleMarker(
+                [18.1978, 120.5957],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_12963b32124f279357e5016ab81f7d42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6642b47782b56785a803fa45eebf78e = $(`<div id="html_f6642b47782b56785a803fa45eebf78e" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Laoag</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_12963b32124f279357e5016ab81f7d42.setContent(html_f6642b47782b56785a803fa45eebf78e);
+            
+        
+
+        circle_marker_98c9fbd0e3eed7244baab6b9d1403a58.bindPopup(popup_12963b32124f279357e5016ab81f7d42)
+        ;
+
+        
+    
+    
+            var circle_marker_311b3a177cad2dc447ba1dc59e433f5a = L.circleMarker(
+                [10.3127, 123.9488],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_a4cd9c3cfca718751755c28d38dca1ff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de8f80746bcd5c219d30b55fd1bbce40 = $(`<div id="html_de8f80746bcd5c219d30b55fd1bbce40" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Lapu-Lapu City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_a4cd9c3cfca718751755c28d38dca1ff.setContent(html_de8f80746bcd5c219d30b55fd1bbce40);
+            
+        
+
+        circle_marker_311b3a177cad2dc447ba1dc59e433f5a.bindPopup(popup_a4cd9c3cfca718751755c28d38dca1ff)
+        ;
+
+        
+    
+    
+            var circle_marker_fb35d22d25279c92eb2692624ff99988 = L.circleMarker(
+                [14.45, 120.9833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_ddd2a7afb0f6527caf4d27375cf3d5fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5be51523d39e5da6a8b02837538df646 = $(`<div id="html_5be51523d39e5da6a8b02837538df646" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Las Piñas</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_ddd2a7afb0f6527caf4d27375cf3d5fd.setContent(html_5be51523d39e5da6a8b02837538df646);
+            
+        
+
+        circle_marker_fb35d22d25279c92eb2692624ff99988.bindPopup(popup_ddd2a7afb0f6527caf4d27375cf3d5fd)
+        ;
+
+        
+    
+    
+            var circle_marker_d08d2c71e51e0682d4c03502cb8c047a = L.circleMarker(
+                [13.1392, 123.7353],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_78bd5b1e50d7724e955d71b06adcbe8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86a432211bb2e15899a4b746f48630fe = $(`<div id="html_86a432211bb2e15899a4b746f48630fe" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Legazpi City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_78bd5b1e50d7724e955d71b06adcbe8f.setContent(html_86a432211bb2e15899a4b746f48630fe);
+            
+        
+
+        circle_marker_d08d2c71e51e0682d4c03502cb8c047a.bindPopup(popup_78bd5b1e50d7724e955d71b06adcbe8f)
+        ;
+
+        
+    
+    
+            var circle_marker_4f9d10db69968edc3613e44f5b524562 = L.circleMarker(
+                [13.2167, 123.5167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_f1401594a341b5c36e1a8d56462b800d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93bc558d9205aec587d0baf3c395f5e4 = $(`<div id="html_93bc558d9205aec587d0baf3c395f5e4" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Ligao</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_f1401594a341b5c36e1a8d56462b800d.setContent(html_93bc558d9205aec587d0baf3c395f5e4);
+            
+        
+
+        circle_marker_4f9d10db69968edc3613e44f5b524562.bindPopup(popup_f1401594a341b5c36e1a8d56462b800d)
+        ;
+
+        
+    
+    
+            var circle_marker_cde0dea6e3b11b2a6a8b7ed6c1c42429 = L.circleMarker(
+                [13.9411, 121.1614],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_c0ffd30cb2b80c2e1e2d7617dafffbc1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49ecf098c6a1efe9be7525170430845b = $(`<div id="html_49ecf098c6a1efe9be7525170430845b" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Lipa City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_c0ffd30cb2b80c2e1e2d7617dafffbc1.setContent(html_49ecf098c6a1efe9be7525170430845b);
+            
+        
+
+        circle_marker_cde0dea6e3b11b2a6a8b7ed6c1c42429.bindPopup(popup_c0ffd30cb2b80c2e1e2d7617dafffbc1)
+        ;
+
+        
+    
+    
+            var circle_marker_153a07e19d2be723a71660fd593cfbdd = L.circleMarker(
+                [13.9333, 121.6167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_634f0880ecaacb7cc0862c4d658d80f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d9d206d2a5589c158fff624720ec4f9 = $(`<div id="html_8d9d206d2a5589c158fff624720ec4f9" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Lucena</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_634f0880ecaacb7cc0862c4d658d80f9.setContent(html_8d9d206d2a5589c158fff624720ec4f9);
+            
+        
+
+        circle_marker_153a07e19d2be723a71660fd593cfbdd.bindPopup(popup_634f0880ecaacb7cc0862c4d658d80f9)
+        ;
+
+        
+    
+    
+            var circle_marker_fced7feec79cabb92b6d2861fd910899 = L.circleMarker(
+                [10.1333, 124.85],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_ed801ea1ba94b3d1a7bb6c6db7c544ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea4851713081ce4a4a3cd6f898411733 = $(`<div id="html_ea4851713081ce4a4a3cd6f898411733" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Maasin</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_ed801ea1ba94b3d1a7bb6c6db7c544ee.setContent(html_ea4851713081ce4a4a3cd6f898411733);
+            
+        
+
+        circle_marker_fced7feec79cabb92b6d2861fd910899.bindPopup(popup_ed801ea1ba94b3d1a7bb6c6db7c544ee)
+        ;
+
+        
+    
+    
+            var circle_marker_ed9e7511f7f86edb2d2d6a39de4037dd = L.circleMarker(
+                [15.2167, 120.5833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_760e8de0b47cd604740c5cd31a460af0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a24d535355ae1b3815d64d7d5566b91 = $(`<div id="html_5a24d535355ae1b3815d64d7d5566b91" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Mabalacat City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_760e8de0b47cd604740c5cd31a460af0.setContent(html_5a24d535355ae1b3815d64d7d5566b91);
+            
+        
+
+        circle_marker_ed9e7511f7f86edb2d2d6a39de4037dd.bindPopup(popup_760e8de0b47cd604740c5cd31a460af0)
+        ;
+
+        
+    
+    
+            var circle_marker_ce602ef8870592118ba6f73e2a0b816f = L.circleMarker(
+                [14.5547, 121.0244],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_b890df86852cf69ebd801d8acaffac14 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f527057e201157b6bfc5656028eae10b = $(`<div id="html_f527057e201157b6bfc5656028eae10b" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Makati City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 4</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_b890df86852cf69ebd801d8acaffac14.setContent(html_f527057e201157b6bfc5656028eae10b);
+            
+        
+
+        circle_marker_ce602ef8870592118ba6f73e2a0b816f.bindPopup(popup_b890df86852cf69ebd801d8acaffac14)
+        ;
+
+        
+    
+    
+            var circle_marker_438a0f6115c013fd6d5308595ecacc1f = L.circleMarker(
+                [14.6625, 120.9567],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_c1bdb7800046dc541dd13e08fc4e0b04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3431829886853162e580bec9a170787 = $(`<div id="html_c3431829886853162e580bec9a170787" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Malabon</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_c1bdb7800046dc541dd13e08fc4e0b04.setContent(html_c3431829886853162e580bec9a170787);
+            
+        
+
+        circle_marker_438a0f6115c013fd6d5308595ecacc1f.bindPopup(popup_c1bdb7800046dc541dd13e08fc4e0b04)
+        ;
+
+        
+    
+    
+            var circle_marker_e773a9176491b9ebd90414ff5eb766dd = L.circleMarker(
+                [8.1575, 125.0824],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_4992aa9ccc54b7c23eab8a5621231e54 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e68b9bb4dacfa221892b1d652995acd = $(`<div id="html_7e68b9bb4dacfa221892b1d652995acd" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Malaybalay</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_4992aa9ccc54b7c23eab8a5621231e54.setContent(html_7e68b9bb4dacfa221892b1d652995acd);
+            
+        
+
+        circle_marker_e773a9176491b9ebd90414ff5eb766dd.bindPopup(popup_4992aa9ccc54b7c23eab8a5621231e54)
+        ;
+
+        
+    
+    
+            var circle_marker_65e0b990e160da131183ab09381fb082 = L.circleMarker(
+                [14.8433, 120.8114],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_79611b2c1c1e20cf931128ccb168a0c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96da5cacf3385345bbf225e16327db03 = $(`<div id="html_96da5cacf3385345bbf225e16327db03" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Malolos</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_79611b2c1c1e20cf931128ccb168a0c6.setContent(html_96da5cacf3385345bbf225e16327db03);
+            
+        
+
+        circle_marker_65e0b990e160da131183ab09381fb082.bindPopup(popup_79611b2c1c1e20cf931128ccb168a0c6)
+        ;
+
+        
+    
+    
+            var circle_marker_3344bdb6f5380042e412e13cbe3f6e4c = L.circleMarker(
+                [14.5831, 121.0368],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_465055f9ccf7a8e94e06b9c60dfd8469 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7bee1a729a88148c0f28ac6e1bb68ca9 = $(`<div id="html_7bee1a729a88148c0f28ac6e1bb68ca9" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Mandaluyong City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 5</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_465055f9ccf7a8e94e06b9c60dfd8469.setContent(html_7bee1a729a88148c0f28ac6e1bb68ca9);
+            
+        
+
+        circle_marker_3344bdb6f5380042e412e13cbe3f6e4c.bindPopup(popup_465055f9ccf7a8e94e06b9c60dfd8469)
+        ;
+
+        
+    
+    
+            var circle_marker_5120828cba44df9e56d65020e699f782 = L.circleMarker(
+                [10.3333, 123.9333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_21050e01415af59f9d24a2cfa95a6d88 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3477b495e37aeef211867d8900789ba = $(`<div id="html_a3477b495e37aeef211867d8900789ba" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Mandaue City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_21050e01415af59f9d24a2cfa95a6d88.setContent(html_a3477b495e37aeef211867d8900789ba);
+            
+        
+
+        circle_marker_5120828cba44df9e56d65020e699f782.bindPopup(popup_21050e01415af59f9d24a2cfa95a6d88)
+        ;
+
+        
+    
+    
+            var circle_marker_e4763f3b4f509c582545754453ea8193 = L.circleMarker(
+                [14.5995, 120.9842],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_53fc7468594da671e093d684d6c000e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ae286d2a05c8cc46b30a76c83cbd8ee = $(`<div id="html_1ae286d2a05c8cc46b30a76c83cbd8ee" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Manila</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_53fc7468594da671e093d684d6c000e8.setContent(html_1ae286d2a05c8cc46b30a76c83cbd8ee);
+            
+        
+
+        circle_marker_e4763f3b4f509c582545754453ea8193.bindPopup(popup_53fc7468594da671e093d684d6c000e8)
+        ;
+
+        
+    
+    
+            var circle_marker_b9a1c4ffd833c89b5d29b5c7660cc8a9 = L.circleMarker(
+                [8.0, 124.3],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_e68a65c55c5251c8d3c1173e27d0a2c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_348627e4cb04be89ea5675f88d8a7ac4 = $(`<div id="html_348627e4cb04be89ea5675f88d8a7ac4" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Marawi</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 5</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_e68a65c55c5251c8d3c1173e27d0a2c2.setContent(html_348627e4cb04be89ea5675f88d8a7ac4);
+            
+        
+
+        circle_marker_b9a1c4ffd833c89b5d29b5c7660cc8a9.bindPopup(popup_e68a65c55c5251c8d3c1173e27d0a2c2)
+        ;
+
+        
+    
+    
+            var circle_marker_681f6c3d6e7fc4e89a2b2d16a1875692 = L.circleMarker(
+                [6.95, 126.2167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_6f89358d6c4b07fce807a5b90ea7c23e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27bd13b98a4a1edf9ef19853aa37166b = $(`<div id="html_27bd13b98a4a1edf9ef19853aa37166b" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Mati</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_6f89358d6c4b07fce807a5b90ea7c23e.setContent(html_27bd13b98a4a1edf9ef19853aa37166b);
+            
+        
+
+        circle_marker_681f6c3d6e7fc4e89a2b2d16a1875692.bindPopup(popup_6f89358d6c4b07fce807a5b90ea7c23e)
+        ;
+
+        
+    
+    
+            var circle_marker_309ca2f36b8b8f94212aa98cf92a3537 = L.circleMarker(
+                [14.7333, 120.9667],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_dab1af68ffe3a4c8c00b2f8308701953 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a1bba83be45af0875b097c70e94d8a1 = $(`<div id="html_4a1bba83be45af0875b097c70e94d8a1" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Meycauayan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_dab1af68ffe3a4c8c00b2f8308701953.setContent(html_4a1bba83be45af0875b097c70e94d8a1);
+            
+        
+
+        circle_marker_309ca2f36b8b8f94212aa98cf92a3537.bindPopup(popup_dab1af68ffe3a4c8c00b2f8308701953)
+        ;
+
+        
+    
+    
+            var circle_marker_86b992f538463a9a5b2c38ff13bf72f1 = L.circleMarker(
+                [15.7167, 120.9],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_38fbeb80244861da820b207244d48f48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a272044f25bed8d77ea735851fc66ced = $(`<div id="html_a272044f25bed8d77ea735851fc66ced" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Muñoz</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_38fbeb80244861da820b207244d48f48.setContent(html_a272044f25bed8d77ea735851fc66ced);
+            
+        
+
+        circle_marker_86b992f538463a9a5b2c38ff13bf72f1.bindPopup(popup_38fbeb80244861da820b207244d48f48)
+        ;
+
+        
+    
+    
+            var circle_marker_29eaa5ec7f29f923e4d63393e20b1ff1 = L.circleMarker(
+                [13.6192, 123.1815],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_6cf0eda45417c26e27d432cc2f276a30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea2882ac1ce5e5c807738c2bdce08cca = $(`<div id="html_ea2882ac1ce5e5c807738c2bdce08cca" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Naga</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_6cf0eda45417c26e27d432cc2f276a30.setContent(html_ea2882ac1ce5e5c807738c2bdce08cca);
+            
+        
+
+        circle_marker_29eaa5ec7f29f923e4d63393e20b1ff1.bindPopup(popup_6cf0eda45417c26e27d432cc2f276a30)
+        ;
+
+        
+    
+    
+            var circle_marker_cee973e2e8cb1911257178c2c4610ea4 = L.circleMarker(
+                [14.6667, 120.9333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_2115ef446cd524a5dab4133cdf63962e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee39aed7aa4f5e7901ee31a97d9d27d4 = $(`<div id="html_ee39aed7aa4f5e7901ee31a97d9d27d4" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Navotas</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 4</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_2115ef446cd524a5dab4133cdf63962e.setContent(html_ee39aed7aa4f5e7901ee31a97d9d27d4);
+            
+        
+
+        circle_marker_cee973e2e8cb1911257178c2c4610ea4.bindPopup(popup_2115ef446cd524a5dab4133cdf63962e)
+        ;
+
+        
+    
+    
+            var circle_marker_96d04263b1451f24e5109d9ab1d0b05c = L.circleMarker(
+                [14.8333, 120.2833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_f176faf342d4beb256f37cdc23cf76e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe323df1431d1f4a7fa8a08496998376 = $(`<div id="html_fe323df1431d1f4a7fa8a08496998376" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Olongapo</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_f176faf342d4beb256f37cdc23cf76e1.setContent(html_fe323df1431d1f4a7fa8a08496998376);
+            
+        
+
+        circle_marker_96d04263b1451f24e5109d9ab1d0b05c.bindPopup(popup_f176faf342d4beb256f37cdc23cf76e1)
+        ;
+
+        
+    
+    
+            var circle_marker_0d67b37dc6939611527222c7fea239d7 = L.circleMarker(
+                [11.0, 124.6333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_de87af5ad94e8c4ff530122a6efb1ce9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_122739f6b87a5457a6364f4d26e74409 = $(`<div id="html_122739f6b87a5457a6364f4d26e74409" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Ormoc</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_de87af5ad94e8c4ff530122a6efb1ce9.setContent(html_122739f6b87a5457a6364f4d26e74409);
+            
+        
+
+        circle_marker_0d67b37dc6939611527222c7fea239d7.bindPopup(popup_de87af5ad94e8c4ff530122a6efb1ce9)
+        ;
+
+        
+    
+    
+            var circle_marker_b4871679e97be6042d1b10737ab320e7 = L.circleMarker(
+                [8.4848, 123.8062],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_f9008e83ef5019385512b32505e187ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_295c288c79aaf9e76432b590ce32cff8 = $(`<div id="html_295c288c79aaf9e76432b590ce32cff8" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Oroquieta</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_f9008e83ef5019385512b32505e187ec.setContent(html_295c288c79aaf9e76432b590ce32cff8);
+            
+        
+
+        circle_marker_b4871679e97be6042d1b10737ab320e7.bindPopup(popup_f9008e83ef5019385512b32505e187ec)
+        ;
+
+        
+    
+    
+            var circle_marker_5f0b4b0d3ff2f7606228fc77c17c0a04 = L.circleMarker(
+                [8.15, 123.85],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_f475dda6155026969e1ecb4c0c12bcdd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c5fd5e52e454f54dbfaa2f1402809e5 = $(`<div id="html_6c5fd5e52e454f54dbfaa2f1402809e5" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Ozamiz City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_f475dda6155026969e1ecb4c0c12bcdd.setContent(html_6c5fd5e52e454f54dbfaa2f1402809e5);
+            
+        
+
+        circle_marker_5f0b4b0d3ff2f7606228fc77c17c0a04.bindPopup(popup_f475dda6155026969e1ecb4c0c12bcdd)
+        ;
+
+        
+    
+    
+            var circle_marker_e2c2c09920a3204cc37106fc61bcb91b = L.circleMarker(
+                [7.8333, 123.4333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_00e904fd200e3d63156f90f391bfdf00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c2cded19f385410ae754dee7d47b553b = $(`<div id="html_c2cded19f385410ae754dee7d47b553b" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Pagadian</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_00e904fd200e3d63156f90f391bfdf00.setContent(html_c2cded19f385410ae754dee7d47b553b);
+            
+        
+
+        circle_marker_e2c2c09920a3204cc37106fc61bcb91b.bindPopup(popup_00e904fd200e3d63156f90f391bfdf00)
+        ;
+
+        
+    
+    
+            var circle_marker_cb2c7ea454867387872b200cd918217b = L.circleMarker(
+                [15.5333, 121.0833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_db0e23a75d852a8b89434a8cd5775eae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d0c3cd7c8bc15c3e7021b2658429a51 = $(`<div id="html_4d0c3cd7c8bc15c3e7021b2658429a51" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Palayan City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 5</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_db0e23a75d852a8b89434a8cd5775eae.setContent(html_4d0c3cd7c8bc15c3e7021b2658429a51);
+            
+        
+
+        circle_marker_cb2c7ea454867387872b200cd918217b.bindPopup(popup_db0e23a75d852a8b89434a8cd5775eae)
+        ;
+
+        
+    
+    
+            var circle_marker_1b3acfde4fe0d314251d0aafaaeb569b = L.circleMarker(
+                [7.3, 125.6833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_8bf6d162afe504576f30ef8ffb16fe87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4fc24aa19ecc9e8f1a499ec234880587 = $(`<div id="html_4fc24aa19ecc9e8f1a499ec234880587" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Panabo</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_8bf6d162afe504576f30ef8ffb16fe87.setContent(html_4fc24aa19ecc9e8f1a499ec234880587);
+            
+        
+
+        circle_marker_1b3acfde4fe0d314251d0aafaaeb569b.bindPopup(popup_8bf6d162afe504576f30ef8ffb16fe87)
+        ;
+
+        
+    
+    
+            var circle_marker_d990549f5da217abbfb0b7135ff74dfd = L.circleMarker(
+                [14.4667, 121.0167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_926af34dfb59f711b5396adb9cde435e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b15d45b8e560fd361cb43fce8c3f1483 = $(`<div id="html_b15d45b8e560fd361cb43fce8c3f1483" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Paranaque City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 4</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_926af34dfb59f711b5396adb9cde435e.setContent(html_b15d45b8e560fd361cb43fce8c3f1483);
+            
+        
+
+        circle_marker_d990549f5da217abbfb0b7135ff74dfd.bindPopup(popup_926af34dfb59f711b5396adb9cde435e)
+        ;
+
+        
+    
+    
+            var circle_marker_be66898272853597b5804b7619a37170 = L.circleMarker(
+                [14.575, 121.0833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_1c6d23de330e9cd77ed6371a7db7c0c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06b7c0e27ddd55e4fc4e31c1cdcd27e7 = $(`<div id="html_06b7c0e27ddd55e4fc4e31c1cdcd27e7" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Pasig</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 5</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_1c6d23de330e9cd77ed6371a7db7c0c3.setContent(html_06b7c0e27ddd55e4fc4e31c1cdcd27e7);
+            
+        
+
+        circle_marker_be66898272853597b5804b7619a37170.bindPopup(popup_1c6d23de330e9cd77ed6371a7db7c0c3)
+        ;
+
+        
+    
+    
+            var circle_marker_c1d8a328d1896f74792aef21a2397706 = L.circleMarker(
+                [9.75, 118.75],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_9cc9aa76b14a56ace8832472778b0d3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_550a42d2017f8da1e35489a049c0ae17 = $(`<div id="html_550a42d2017f8da1e35489a049c0ae17" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Puerto Princesa City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_9cc9aa76b14a56ace8832472778b0d3e.setContent(html_550a42d2017f8da1e35489a049c0ae17);
+            
+        
+
+        circle_marker_c1d8a328d1896f74792aef21a2397706.bindPopup(popup_9cc9aa76b14a56ace8832472778b0d3e)
+        ;
+
+        
+    
+    
+            var circle_marker_b5a23e76381bb382bb4dfee308f55e52 = L.circleMarker(
+                [14.6333, 121.0333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_47409452629b02900be3d4d14ca7cd0d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2119a02699b44c8530ea4f0fd2dcbf91 = $(`<div id="html_2119a02699b44c8530ea4f0fd2dcbf91" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Quezon City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_47409452629b02900be3d4d14ca7cd0d.setContent(html_2119a02699b44c8530ea4f0fd2dcbf91);
+            
+        
+
+        circle_marker_b5a23e76381bb382bb4dfee308f55e52.bindPopup(popup_47409452629b02900be3d4d14ca7cd0d)
+        ;
+
+        
+    
+    
+            var circle_marker_178fb9defbe07e3c4d8f0a574de3f792 = L.circleMarker(
+                [11.5858, 122.7511],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_99fe3bcce41775760610ea07d2355678 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_606b6b8058b7596aeecd31bd0a728694 = $(`<div id="html_606b6b8058b7596aeecd31bd0a728694" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Roxas</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_99fe3bcce41775760610ea07d2355678.setContent(html_606b6b8058b7596aeecd31bd0a728694);
+            
+        
+
+        circle_marker_178fb9defbe07e3c4d8f0a574de3f792.bindPopup(popup_99fe3bcce41775760610ea07d2355678)
+        ;
+
+        
+    
+    
+            var circle_marker_6951ec52dd5150cb827d4b39743a14ae = L.circleMarker(
+                [10.9, 123.4167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_e8b87575eb6459546bdc87e0d376c67d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1c14e30d1f564b2b3f0d0636f1a4920 = $(`<div id="html_c1c14e30d1f564b2b3f0d0636f1a4920" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Sagay</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_e8b87575eb6459546bdc87e0d376c67d.setContent(html_c1c14e30d1f564b2b3f0d0636f1a4920);
+            
+        
+
+        circle_marker_6951ec52dd5150cb827d4b39743a14ae.bindPopup(popup_e8b87575eb6459546bdc87e0d376c67d)
+        ;
+
+        
+    
+    
+            var circle_marker_991b01b850114c94ca69907fdde99fef = L.circleMarker(
+                [7.0833, 125.7167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_3e597c9f32acaf14916a194975b8726b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c8f8c9aa5470daf94d6b2680aebfb40 = $(`<div id="html_1c8f8c9aa5470daf94d6b2680aebfb40" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Samal</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_3e597c9f32acaf14916a194975b8726b.setContent(html_1c8f8c9aa5470daf94d6b2680aebfb40);
+            
+        
+
+        circle_marker_991b01b850114c94ca69907fdde99fef.bindPopup(popup_3e597c9f32acaf14916a194975b8726b)
+        ;
+
+        
+    
+    
+            var circle_marker_9c93413b2c827019e327533b0d523604 = L.circleMarker(
+                [10.5, 123.4167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_96384fe4aea6e4f1a07a9c448dde5778 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7474c080f062be475f90fb1d5fc95024 = $(`<div id="html_7474c080f062be475f90fb1d5fc95024" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>San Carlos</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_96384fe4aea6e4f1a07a9c448dde5778.setContent(html_7474c080f062be475f90fb1d5fc95024);
+            
+        
+
+        circle_marker_9c93413b2c827019e327533b0d523604.bindPopup(popup_96384fe4aea6e4f1a07a9c448dde5778)
+        ;
+
+        
+    
+    
+            var circle_marker_c4186218b4c3fd07b2b6d033d8b833bf = L.circleMarker(
+                [15.0333, 120.6833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_54b503f5b5d98bf5e4ea41972c195e92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e55d8f2346d4cdc48e1cefa62a9c288 = $(`<div id="html_8e55d8f2346d4cdc48e1cefa62a9c288" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>San Fernando</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_54b503f5b5d98bf5e4ea41972c195e92.setContent(html_8e55d8f2346d4cdc48e1cefa62a9c288);
+            
+        
+
+        circle_marker_c4186218b4c3fd07b2b6d033d8b833bf.bindPopup(popup_54b503f5b5d98bf5e4ea41972c195e92)
+        ;
+
+        
+    
+    
+            var circle_marker_db281253f295fe7911d9dff394391c9c = L.circleMarker(
+                [12.3595, 121.0673],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_4f55cf3a853d8e3496a7cff3c1c8d481 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c701d200dd6e2c9d8ca235712bf640e8 = $(`<div id="html_c701d200dd6e2c9d8ca235712bf640e8" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>San Jose</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_4f55cf3a853d8e3496a7cff3c1c8d481.setContent(html_c701d200dd6e2c9d8ca235712bf640e8);
+            
+        
+
+        circle_marker_db281253f295fe7911d9dff394391c9c.bindPopup(popup_4f55cf3a853d8e3496a7cff3c1c8d481)
+        ;
+
+        
+    
+    
+            var circle_marker_7a1409e2ec322a954a97faa1eba96327 = L.circleMarker(
+                [14.8139, 121.0453],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_bcb94aef01a330943e912d1b232f682a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d817064b0910fbe900f11c9fa55dc174 = $(`<div id="html_d817064b0910fbe900f11c9fa55dc174" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>San Jose del Monte</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_bcb94aef01a330943e912d1b232f682a.setContent(html_d817064b0910fbe900f11c9fa55dc174);
+            
+        
+
+        circle_marker_7a1409e2ec322a954a97faa1eba96327.bindPopup(popup_bcb94aef01a330943e912d1b232f682a)
+        ;
+
+        
+    
+    
+            var circle_marker_5e380cae06b8dd743693ac358a10767e = L.circleMarker(
+                [14.6, 121.0333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_7a60b1ebfaaee9e0a1e1bd0837bcbd74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82913e9acc68c8b1b26ac7dfa4ff0482 = $(`<div id="html_82913e9acc68c8b1b26ac7dfa4ff0482" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>San Juan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_7a60b1ebfaaee9e0a1e1bd0837bcbd74.setContent(html_82913e9acc68c8b1b26ac7dfa4ff0482);
+            
+        
+
+        circle_marker_5e380cae06b8dd743693ac358a10767e.bindPopup(popup_7a60b1ebfaaee9e0a1e1bd0837bcbd74)
+        ;
+
+        
+    
+    
+            var circle_marker_6f10006b6628bade6ecae15d6a8943d8 = L.circleMarker(
+                [14.0667, 121.325],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_14cdc908b5c059b5431012ca1ccdc554 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9dfe62672aad9464c1e365f0972e3eb = $(`<div id="html_c9dfe62672aad9464c1e365f0972e3eb" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>San Pablo</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_14cdc908b5c059b5431012ca1ccdc554.setContent(html_c9dfe62672aad9464c1e365f0972e3eb);
+            
+        
+
+        circle_marker_6f10006b6628bade6ecae15d6a8943d8.bindPopup(popup_14cdc908b5c059b5431012ca1ccdc554)
+        ;
+
+        
+    
+    
+            var circle_marker_24b2ea4a3791f501eb5be31ae1ee6f07 = L.circleMarker(
+                [14.35, 121.05],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_4db17e6935982d288f07ac70fce5c335 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff962ba0e80abac4ba914282de87828a = $(`<div id="html_ff962ba0e80abac4ba914282de87828a" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>San Pedro</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_4db17e6935982d288f07ac70fce5c335.setContent(html_ff962ba0e80abac4ba914282de87828a);
+            
+        
+
+        circle_marker_24b2ea4a3791f501eb5be31ae1ee6f07.bindPopup(popup_4db17e6935982d288f07ac70fce5c335)
+        ;
+
+        
+    
+    
+            var circle_marker_5aa2c31dcaca6f14064c0c718f435d14 = L.circleMarker(
+                [14.3167, 121.1167],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_38b37deda185ef2a3d28129e9c6af331 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8803696b94b6b69e6308310423066769 = $(`<div id="html_8803696b94b6b69e6308310423066769" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Santa Rosa</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_38b37deda185ef2a3d28129e9c6af331.setContent(html_8803696b94b6b69e6308310423066769);
+            
+        
+
+        circle_marker_5aa2c31dcaca6f14064c0c718f435d14.bindPopup(popup_38b37deda185ef2a3d28129e9c6af331)
+        ;
+
+        
+    
+    
+            var circle_marker_46260e87a03da66bd8b5a7e48237913b = L.circleMarker(
+                [16.6833, 121.55],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_286a3fd3b2d94623d8b435472dd7a8e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ee451350ca7f242c9d18c9765b17b55 = $(`<div id="html_6ee451350ca7f242c9d18c9765b17b55" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Santiago</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_286a3fd3b2d94623d8b435472dd7a8e6.setContent(html_6ee451350ca7f242c9d18c9765b17b55);
+            
+        
+
+        circle_marker_46260e87a03da66bd8b5a7e48237913b.bindPopup(popup_286a3fd3b2d94623d8b435472dd7a8e6)
+        ;
+
+        
+    
+    
+            var circle_marker_fb049b62389682174e28f28b85e2bb75 = L.circleMarker(
+                [14.1, 121.1833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_44591a649cd38b7c67235285b824aab0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03c7255610f84b90e2dbd834a35bc8b2 = $(`<div id="html_03c7255610f84b90e2dbd834a35bc8b2" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Santo Tomas</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_44591a649cd38b7c67235285b824aab0.setContent(html_03c7255610f84b90e2dbd834a35bc8b2);
+            
+        
+
+        circle_marker_fb049b62389682174e28f28b85e2bb75.bindPopup(popup_44591a649cd38b7c67235285b824aab0)
+        ;
+
+        
+    
+    
+            var circle_marker_d4bf80106c673062f7a40a47e9bfdcf7 = L.circleMarker(
+                [10.8, 122.9667],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_af6cd2f3abc8b28e002d618cc61ade03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d3c29fbd678a7aed71dd672d69e82ab = $(`<div id="html_1d3c29fbd678a7aed71dd672d69e82ab" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Silay City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_af6cd2f3abc8b28e002d618cc61ade03.setContent(html_1d3c29fbd678a7aed71dd672d69e82ab);
+            
+        
+
+        circle_marker_d4bf80106c673062f7a40a47e9bfdcf7.bindPopup(popup_af6cd2f3abc8b28e002d618cc61ade03)
+        ;
+
+        
+    
+    
+            var circle_marker_f52feb4a7bb6c5b9957ee9cd30cad4a6 = L.circleMarker(
+                [9.75, 122.4],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_5d7be9a1244386301a98d512d88918bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_041d13620a1640253db8dae2e4644d09 = $(`<div id="html_041d13620a1640253db8dae2e4644d09" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Sipalay</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_5d7be9a1244386301a98d512d88918bf.setContent(html_041d13620a1640253db8dae2e4644d09);
+            
+        
+
+        circle_marker_f52feb4a7bb6c5b9957ee9cd30cad4a6.bindPopup(popup_5d7be9a1244386301a98d512d88918bf)
+        ;
+
+        
+    
+    
+            var circle_marker_f18b9d5a04603cd6e946eea94cfc8b34 = L.circleMarker(
+                [9.7833, 125.4833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_e1a5c45b1a55b12d97f0cb10da23a505 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_491edd969132776540f1eb24b85e8a86 = $(`<div id="html_491edd969132776540f1eb24b85e8a86" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Surigao City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_e1a5c45b1a55b12d97f0cb10da23a505.setContent(html_491edd969132776540f1eb24b85e8a86);
+            
+        
+
+        circle_marker_f18b9d5a04603cd6e946eea94cfc8b34.bindPopup(popup_e1a5c45b1a55b12d97f0cb10da23a505)
+        ;
+
+        
+    
+    
+            var circle_marker_0899300969e07f979a11a5845fd2052b = L.circleMarker(
+                [13.35, 123.7333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_77741ad94a2ad3fd179835e14610f654 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3a8181d5949a84d84e3bfcd99e7f125 = $(`<div id="html_b3a8181d5949a84d84e3bfcd99e7f125" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Tabaco</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_77741ad94a2ad3fd179835e14610f654.setContent(html_b3a8181d5949a84d84e3bfcd99e7f125);
+            
+        
+
+        circle_marker_0899300969e07f979a11a5845fd2052b.bindPopup(popup_77741ad94a2ad3fd179835e14610f654)
+        ;
+
+        
+    
+    
+            var circle_marker_991afd1018cda96a806ebe755f37057d = L.circleMarker(
+                [17.45, 121.4667],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_4e2822b0adf468a28cf6bc603cf6efea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_367a9cb09902c8d2daea9f56ab93b3ce = $(`<div id="html_367a9cb09902c8d2daea9f56ab93b3ce" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Tabuk</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_4e2822b0adf468a28cf6bc603cf6efea.setContent(html_367a9cb09902c8d2daea9f56ab93b3ce);
+            
+        
+
+        circle_marker_991afd1018cda96a806ebe755f37057d.bindPopup(popup_4e2822b0adf468a28cf6bc603cf6efea)
+        ;
+
+        
+    
+    
+            var circle_marker_47bc663cbf5d033cd0004e121ad6e26a = L.circleMarker(
+                [11.2514, 125.0041],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_ba3cad710245490f302b6c381b9bff95 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da67b44509d42c3ccfe5fee6fbdc8037 = $(`<div id="html_da67b44509d42c3ccfe5fee6fbdc8037" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Tacloban City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_ba3cad710245490f302b6c381b9bff95.setContent(html_da67b44509d42c3ccfe5fee6fbdc8037);
+            
+        
+
+        circle_marker_47bc663cbf5d033cd0004e121ad6e26a.bindPopup(popup_ba3cad710245490f302b6c381b9bff95)
+        ;
+
+        
+    
+    
+            var circle_marker_89be2897d7c29d70e575a197b0e51440 = L.circleMarker(
+                [6.6833, 124.6667],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_622df6c847720734ac2d9bb95ae9e7f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b8cb4c47e828266da1a9ea7983e5649 = $(`<div id="html_6b8cb4c47e828266da1a9ea7983e5649" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Tacurong</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_622df6c847720734ac2d9bb95ae9e7f5.setContent(html_6b8cb4c47e828266da1a9ea7983e5649);
+            
+        
+
+        circle_marker_89be2897d7c29d70e575a197b0e51440.bindPopup(popup_622df6c847720734ac2d9bb95ae9e7f5)
+        ;
+
+        
+    
+    
+            var circle_marker_403b2d1fc91679651bebaab377dd36b1 = L.circleMarker(
+                [14.1, 120.9667],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_93bbf814f74e6b8cdb4bcc2a34acb9f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dffd4f2ccdd2c45bba25504b8e523d64 = $(`<div id="html_dffd4f2ccdd2c45bba25504b8e523d64" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Tagaytay City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_93bbf814f74e6b8cdb4bcc2a34acb9f0.setContent(html_dffd4f2ccdd2c45bba25504b8e523d64);
+            
+        
+
+        circle_marker_403b2d1fc91679651bebaab377dd36b1.bindPopup(popup_93bbf814f74e6b8cdb4bcc2a34acb9f0)
+        ;
+
+        
+    
+    
+            var circle_marker_0eb6c05817c6c07ce72c37127f8c1327 = L.circleMarker(
+                [14.5167, 121.05],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_ff3fc403413bba0faa2ba403c6f38be9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fafa2ce7e8707ae778229ff095bd9205 = $(`<div id="html_fafa2ce7e8707ae778229ff095bd9205" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Taguig</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_ff3fc403413bba0faa2ba403c6f38be9.setContent(html_fafa2ce7e8707ae778229ff095bd9205);
+            
+        
+
+        circle_marker_0eb6c05817c6c07ce72c37127f8c1327.bindPopup(popup_ff3fc403413bba0faa2ba403c6f38be9)
+        ;
+
+        
+    
+    
+            var circle_marker_6384fb8953fa02c59d9e4c90e14df38b = L.circleMarker(
+                [10.25, 123.85],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_fd58c29c55135eb17f21c71253610b8a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5191964991ae5b2399d982da86b4d51c = $(`<div id="html_5191964991ae5b2399d982da86b4d51c" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Talisay</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_fd58c29c55135eb17f21c71253610b8a.setContent(html_5191964991ae5b2399d982da86b4d51c);
+            
+        
+
+        circle_marker_6384fb8953fa02c59d9e4c90e14df38b.bindPopup(popup_fd58c29c55135eb17f21c71253610b8a)
+        ;
+
+        
+    
+    
+            var circle_marker_0c41337390e5304e10d6ec4051779804 = L.circleMarker(
+                [14.0833, 121.15],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_035e3e063ff8375e3eb997db57ed9e73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_113b1c08843ca10b622a512dacd592de = $(`<div id="html_113b1c08843ca10b622a512dacd592de" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Tanauan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_035e3e063ff8375e3eb997db57ed9e73.setContent(html_113b1c08843ca10b622a512dacd592de);
+            
+        
+
+        circle_marker_0c41337390e5304e10d6ec4051779804.bindPopup(popup_035e3e063ff8375e3eb997db57ed9e73)
+        ;
+
+        
+    
+    
+            var circle_marker_6934ad8db66478b71d6590d134c7d3ac = L.circleMarker(
+                [9.0667, 126.1833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_c5be219b8d0fd54bbd68702a7ba660ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_596e8aceaa65b5cdfa9d118c2399afdb = $(`<div id="html_596e8aceaa65b5cdfa9d118c2399afdb" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Tandag</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_c5be219b8d0fd54bbd68702a7ba660ce.setContent(html_596e8aceaa65b5cdfa9d118c2399afdb);
+            
+        
+
+        circle_marker_6934ad8db66478b71d6590d134c7d3ac.bindPopup(popup_c5be219b8d0fd54bbd68702a7ba660ce)
+        ;
+
+        
+    
+    
+            var circle_marker_f558cdb5a9a0374761a284c671fb8149 = L.circleMarker(
+                [8.0667, 123.75],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_13bc90d8a1d3b038664803c7fca1e692 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a6f191f2f54c38523b6d19549ffb839 = $(`<div id="html_7a6f191f2f54c38523b6d19549ffb839" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Tangub</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_13bc90d8a1d3b038664803c7fca1e692.setContent(html_7a6f191f2f54c38523b6d19549ffb839);
+            
+        
+
+        circle_marker_f558cdb5a9a0374761a284c671fb8149.bindPopup(popup_13bc90d8a1d3b038664803c7fca1e692)
+        ;
+
+        
+    
+    
+            var circle_marker_feba977a0a0d4b04a5d99ab44ec39c60 = L.circleMarker(
+                [9.5167, 123.16],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_3274554473d280c70f7ab46eb917aadb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab4cc33ec73168852725c62a4527505a = $(`<div id="html_ab4cc33ec73168852725c62a4527505a" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Tanjay</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_3274554473d280c70f7ab46eb917aadb.setContent(html_ab4cc33ec73168852725c62a4527505a);
+            
+        
+
+        circle_marker_feba977a0a0d4b04a5d99ab44ec39c60.bindPopup(popup_3274554473d280c70f7ab46eb917aadb)
+        ;
+
+        
+    
+    
+            var circle_marker_8df06c3977e71908e42ae661de1892a6 = L.circleMarker(
+                [15.4833, 120.5833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_7cd1d56588a1469920acbd5bc366840f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4113aa7fb5d235716b5a31b7bccc3159 = $(`<div id="html_4113aa7fb5d235716b5a31b7bccc3159" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Tarlac City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_7cd1d56588a1469920acbd5bc366840f.setContent(html_4113aa7fb5d235716b5a31b7bccc3159);
+            
+        
+
+        circle_marker_8df06c3977e71908e42ae661de1892a6.bindPopup(popup_7cd1d56588a1469920acbd5bc366840f)
+        ;
+
+        
+    
+    
+            var circle_marker_da60c4ffe2be88e8af4aad66784fa12b = L.circleMarker(
+                [14.0167, 121.5833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_e4fa6885f33c6962493d055ee6c456d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46ec04e843b81f9ddc14e7de19fcbfc4 = $(`<div id="html_46ec04e843b81f9ddc14e7de19fcbfc4" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Tayabas</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_e4fa6885f33c6962493d055ee6c456d6.setContent(html_46ec04e843b81f9ddc14e7de19fcbfc4);
+            
+        
+
+        circle_marker_da60c4ffe2be88e8af4aad66784fa12b.bindPopup(popup_e4fa6885f33c6962493d055ee6c456d6)
+        ;
+
+        
+    
+    
+            var circle_marker_8a29b9310b74bfa2984957f7dd0a32e8 = L.circleMarker(
+                [10.3833, 123.6333],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_97e61f4b034d6a9bc3bcd22e67d20a87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70b988f991ad7cf9823930c49ca43a8f = $(`<div id="html_70b988f991ad7cf9823930c49ca43a8f" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Toledo City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_97e61f4b034d6a9bc3bcd22e67d20a87.setContent(html_70b988f991ad7cf9823930c49ca43a8f);
+            
+        
+
+        circle_marker_8a29b9310b74bfa2984957f7dd0a32e8.bindPopup(popup_97e61f4b034d6a9bc3bcd22e67d20a87)
+        ;
+
+        
+    
+    
+            var circle_marker_79bb5a01cb51390997913b97056253e1 = L.circleMarker(
+                [17.6131, 121.7269],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_f31d944a74686ee1206bd15d21dd1792 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_693b234d90e7aec24079b7b9218feda2 = $(`<div id="html_693b234d90e7aec24079b7b9218feda2" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Tuguegarao</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_f31d944a74686ee1206bd15d21dd1792.setContent(html_693b234d90e7aec24079b7b9218feda2);
+            
+        
+
+        circle_marker_79bb5a01cb51390997913b97056253e1.bindPopup(popup_f31d944a74686ee1206bd15d21dd1792)
+        ;
+
+        
+    
+    
+            var circle_marker_28869e45fb4cb6f76fe81168ca19530d = L.circleMarker(
+                [15.9761, 120.5711],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_e952a80e2a13a0398c078ab4ecfd2666 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_211aa024362cb1ef508c54b09be3e179 = $(`<div id="html_211aa024362cb1ef508c54b09be3e179" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Urdaneta</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 3</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_e952a80e2a13a0398c078ab4ecfd2666.setContent(html_211aa024362cb1ef508c54b09be3e179);
+            
+        
+
+        circle_marker_28869e45fb4cb6f76fe81168ca19530d.bindPopup(popup_e952a80e2a13a0398c078ab4ecfd2666)
+        ;
+
+        
+    
+    
+            var circle_marker_a86937ef390d62df43d44fd6268f764f = L.circleMarker(
+                [7.9, 125.09],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_5bbba0a1c30ac2257c476961c688e74c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6381c92cb9d2655d2a2ae256f6947483 = $(`<div id="html_6381c92cb9d2655d2a2ae256f6947483" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Valencia</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_5bbba0a1c30ac2257c476961c688e74c.setContent(html_6381c92cb9d2655d2a2ae256f6947483);
+            
+        
+
+        circle_marker_a86937ef390d62df43d44fd6268f764f.bindPopup(popup_5bbba0a1c30ac2257c476961c688e74c)
+        ;
+
+        
+    
+    
+            var circle_marker_1f93af513f6379b881461a80b0f1f368 = L.circleMarker(
+                [14.7, 120.9833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_7d2d6e9d200fd3fc11acf3421e49e40b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24766ff392fa76a4cd541262823fd199 = $(`<div id="html_24766ff392fa76a4cd541262823fd199" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Valenzuela</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_7d2d6e9d200fd3fc11acf3421e49e40b.setContent(html_24766ff392fa76a4cd541262823fd199);
+            
+        
+
+        circle_marker_1f93af513f6379b881461a80b0f1f368.bindPopup(popup_7d2d6e9d200fd3fc11acf3421e49e40b)
+        ;
+
+        
+    
+    
+            var circle_marker_b23514776144f0765323a17816e67e43 = L.circleMarker(
+                [10.9, 123.0667],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_d7f947aa0ac22e05128a2d90685772c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6639511eec05c6f27c82758fef8dc3bd = $(`<div id="html_6639511eec05c6f27c82758fef8dc3bd" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Victorias</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_d7f947aa0ac22e05128a2d90685772c1.setContent(html_6639511eec05c6f27c82758fef8dc3bd);
+            
+        
+
+        circle_marker_b23514776144f0765323a17816e67e43.bindPopup(popup_d7f947aa0ac22e05128a2d90685772c1)
+        ;
+
+        
+    
+    
+            var circle_marker_c0afbe16451822e9f8c0495035feb68c = L.circleMarker(
+                [17.5747, 120.3869],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_c8e32513d740843d3e0ad144c9a86f94 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f8d6d108f1483f0a341e535b9a06e6e = $(`<div id="html_0f8d6d108f1483f0a341e535b9a06e6e" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Vigan</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_c8e32513d740843d3e0ad144c9a86f94.setContent(html_0f8d6d108f1483f0a341e535b9a06e6e);
+            
+        
+
+        circle_marker_c0afbe16451822e9f8c0495035feb68c.bindPopup(popup_c8e32513d740843d3e0ad144c9a86f94)
+        ;
+
+        
+    
+    
+            var circle_marker_45ca139d45765cd88547b55590202d6f = L.circleMarker(
+                [6.9167, 122.0833],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_9028ecc21f9d01eab3f3a0e27df76e68 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1ecef03f851625f99b4dac911e473c6 = $(`<div id="html_e1ecef03f851625f99b4dac911e473c6" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Zamboanga City</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 1</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_9028ecc21f9d01eab3f3a0e27df76e68.setContent(html_e1ecef03f851625f99b4dac911e473c6);
+            
+        
+
+        circle_marker_45ca139d45765cd88547b55590202d6f.bindPopup(popup_9028ecc21f9d01eab3f3a0e27df76e68)
+        ;
+
+        
+    
+    
+            var circle_marker_1e4b237c23e1280e7c8045195b4d938a = L.circleMarker(
+                [9.5883, 123.1213],
+                {"bubblingMouseEvents": true, "color": "#00E400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00E400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+        
+    
+        var popup_1db8c4adae653b89654bc03d8788a8f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97217caf3966d762c73c095afe214e71 = $(`<div id="html_97217caf3966d762c73c095afe214e71" style="width: 100.0%; height: 100.0%;">             <div style="width:200px;">                 <h4>Bais</h4>                 <p><b>Date:</b> 2024-07-01</p>                 <p><b>AQI:</b> 2</p>                 <p><b>Health Risk:</b> Good</p>             </div>             </div>`)[0];
+                popup_1db8c4adae653b89654bc03d8788a8f1.setContent(html_97217caf3966d762c73c095afe214e71);
+            
+        
+
+        circle_marker_1e4b237c23e1280e7c8045195b4d938a.bindPopup(popup_1db8c4adae653b89654bc03d8788a8f1)
+        ;
+
+        
+    
+    
+    var color_map_ee2132ed4ffd74214482ec399cc5a182 = {};
+
+    
+    color_map_ee2132ed4ffd74214482ec399cc5a182.color = d3.scale.threshold()
+              .domain([0.0, 0.6012024048096193, 1.2024048096192386, 1.8036072144288577, 2.404809619238477, 3.006012024048096, 3.6072144288577155, 4.208416833667335, 4.809619238476954, 5.410821643286573, 6.012024048096192, 6.613226452905812, 7.214428857715431, 7.81563126252505, 8.41683366733467, 9.01803607214429, 9.619238476953909, 10.220440881763528, 10.821643286573146, 11.422845691382765, 12.024048096192384, 12.625250501002004, 13.226452905811623, 13.827655310621243, 14.428857715430862, 15.030060120240481, 15.6312625250501, 16.23246492985972, 16.83366733466934, 17.43486973947896, 18.03607214428858, 18.637274549098198, 19.238476953907817, 19.839679358717436, 20.440881763527056, 21.04208416833667, 21.64328657314629, 22.24448897795591, 22.84569138276553, 23.44689378757515, 24.04809619238477, 24.649298597194388, 25.250501002004007, 25.851703406813627, 26.452905811623246, 27.054108216432866, 27.655310621242485, 28.256513026052104, 28.857715430861724, 29.458917835671343, 30.060120240480963, 30.661322645290582, 31.2625250501002, 31.86372745490982, 32.46492985971944, 33.06613226452906, 33.66733466933868, 34.2685370741483, 34.86973947895792, 35.47094188376754, 36.07214428857716, 36.673346693386776, 37.274549098196395, 37.875751503006015, 38.476953907815634, 39.078156312625254, 39.67935871743487, 40.28056112224449, 40.88176352705411, 41.482965931863724, 42.08416833667334, 42.68537074148296, 43.28657314629258, 43.8877755511022, 44.48897795591182, 45.09018036072144, 45.69138276553106, 46.29258517034068, 46.8937875751503, 47.49498997995992, 48.09619238476954, 48.69739478957916, 49.298597194388776, 49.899799599198396, 50.501002004008015, 51.102204408817634, 51.703406813627254, 52.30460921843687, 52.90581162324649, 53.50701402805611, 54.10821643286573, 54.70941883767535, 55.31062124248497, 55.91182364729459, 56.51302605210421, 57.11422845691383, 57.71543086172345, 58.31663326653307, 58.91783567134269, 59.519038076152306, 60.120240480961925, 60.721442885771545, 61.322645290581164, 61.92384769539078, 62.5250501002004, 63.12625250501002, 63.72745490981964, 64.32865731462925, 64.92985971943888, 65.53106212424849, 66.13226452905812, 66.73346693386773, 67.33466933867736, 67.93587174348697, 68.5370741482966, 69.13827655310621, 69.73947895791584, 70.34068136272545, 70.94188376753507, 71.54308617234469, 72.14428857715431, 72.74549098196393, 73.34669338677355, 73.94789579158316, 74.54909819639279, 75.1503006012024, 75.75150300601203, 76.35270541082164, 76.95390781563127, 77.55511022044088, 78.15631262525051, 78.75751503006012, 79.35871743486975, 79.95991983967936, 80.56112224448898, 81.1623246492986, 81.76352705410822, 82.36472945891784, 82.96593186372745, 83.56713426853707, 84.16833667334669, 84.76953907815631, 85.37074148296593, 85.97194388777555, 86.57314629258516, 87.17434869739479, 87.7755511022044, 88.37675350701403, 88.97795591182364, 89.57915831663327, 90.18036072144288, 90.78156312625251, 91.38276553106212, 91.98396793587175, 92.58517034068136, 93.18637274549098, 93.7875751503006, 94.38877755511022, 94.98997995991984, 95.59118236472946, 96.19238476953907, 96.7935871743487, 97.39478957915831, 97.99599198396794, 98.59719438877755, 99.19839679358718, 99.79959919839679, 100.40080160320642, 101.00200400801603, 101.60320641282566, 102.20440881763527, 102.8056112224449, 103.40681362725451, 104.00801603206413, 104.60921843687375, 105.21042084168337, 105.81162324649299, 106.41282565130261, 107.01402805611222, 107.61523046092185, 108.21643286573146, 108.81763527054109, 109.4188376753507, 110.02004008016031, 110.62124248496994, 111.22244488977955, 111.82364729458918, 112.42484969939879, 113.02605210420842, 113.62725450901803, 114.22845691382766, 114.82965931863727, 115.4308617234469, 116.03206412825651, 116.63326653306613, 117.23446893787575, 117.83567134268537, 118.43687374749499, 119.03807615230461, 119.63927855711422, 120.24048096192385, 120.84168336673346, 121.44288577154309, 122.0440881763527, 122.64529058116233, 123.24649298597194, 123.84769539078157, 124.44889779559118, 125.0501002004008, 125.65130260521042, 126.25250501002004, 126.85370741482966, 127.45490981963928, 128.0561122244489, 128.6573146292585, 129.25851703406815, 129.85971943887776, 130.46092184368737, 131.06212424849699, 131.66332665330663, 132.26452905811624, 132.86573146292585, 133.46693386773546, 134.0681362725451, 134.66933867735472, 135.27054108216433, 135.87174348697394, 136.47294589178355, 137.0741482965932, 137.6753507014028, 138.27655310621242, 138.87775551102203, 139.47895791583167, 140.08016032064128, 140.6813627254509, 141.2825651302605, 141.88376753507015, 142.48496993987976, 143.08617234468937, 143.68737474949899, 144.28857715430863, 144.88977955911824, 145.49098196392785, 146.09218436873746, 146.6933867735471, 147.29458917835672, 147.89579158316633, 148.49699398797594, 149.09819639278558, 149.6993987975952, 150.3006012024048, 150.90180360721442, 151.50300601202406, 152.10420841683367, 152.70541082164328, 153.3066132264529, 153.90781563126254, 154.50901803607215, 155.11022044088176, 155.71142284569137, 156.31262525050101, 156.91382765531063, 157.51503006012024, 158.11623246492985, 158.7174348697395, 159.3186372745491, 159.91983967935872, 160.52104208416833, 161.12224448897797, 161.72344689378758, 162.3246492985972, 162.9258517034068, 163.52705410821645, 164.12825651302606, 164.72945891783567, 165.33066132264528, 165.9318637274549, 166.53306613226454, 167.13426853707415, 167.73547094188376, 168.33667334669337, 168.93787575150301, 169.53907815631263, 170.14028056112224, 170.74148296593185, 171.3426853707415, 171.9438877755511, 172.54509018036072, 173.14629258517033, 173.74749498997997, 174.34869739478958, 174.9498997995992, 175.5511022044088, 176.15230460921845, 176.75350701402806, 177.35470941883767, 177.95591182364728, 178.55711422845692, 179.15831663326654, 179.75951903807615, 180.36072144288576, 180.9619238476954, 181.56312625250501, 182.16432865731463, 182.76553106212424, 183.36673346693388, 183.9679358717435, 184.5691382765531, 185.17034068136272, 185.77154308617236, 186.37274549098197, 186.97394789579158, 187.5751503006012, 188.17635270541084, 188.77755511022045, 189.37875751503006, 189.97995991983967, 190.5811623246493, 191.18236472945893, 191.78356713426854, 192.38476953907815, 192.98597194388776, 193.5871743486974, 194.18837675350701, 194.78957915831663, 195.39078156312624, 195.99198396793588, 196.5931863727455, 197.1943887775551, 197.79559118236472, 198.39679358717436, 198.99799599198397, 199.59919839679358, 200.2004008016032, 200.80160320641284, 201.40280561122245, 202.00400801603206, 202.60521042084167, 203.2064128256513, 203.80761523046093, 204.40881763527054, 205.01002004008015, 205.6112224448898, 206.2124248496994, 206.81362725450902, 207.41482965931863, 208.01603206412827, 208.61723446893788, 209.2184368737475, 209.8196392785571, 210.42084168336675, 211.02204408817636, 211.62324649298597, 212.22444889779558, 212.82565130260522, 213.42685370741484, 214.02805611222445, 214.62925851703406, 215.2304609218437, 215.8316633266533, 216.43286573146293, 217.03406813627254, 217.63527054108218, 218.2364729458918, 218.8376753507014, 219.43887775551102, 220.04008016032063, 220.64128256513027, 221.24248496993988, 221.8436873747495, 222.4448897795591, 223.04609218436875, 223.64729458917836, 224.24849699398797, 224.84969939879758, 225.45090180360722, 226.05210420841684, 226.65330661322645, 227.25450901803606, 227.8557114228457, 228.4569138276553, 229.05811623246493, 229.65931863727454, 230.26052104208418, 230.8617234468938, 231.4629258517034, 232.06412825651302, 232.66533066132266, 233.26653306613227, 233.86773547094188, 234.4689378757515, 235.07014028056113, 235.67134268537075, 236.27254509018036, 236.87374749498997, 237.4749498997996, 238.07615230460922, 238.67735470941884, 239.27855711422845, 239.8797595190381, 240.4809619238477, 241.0821643286573, 241.68336673346693, 242.28456913827657, 242.88577154308618, 243.4869739478958, 244.0881763527054, 244.68937875751504, 245.29058116232466, 245.89178356713427, 246.49298597194388, 247.0941883767535, 247.69539078156313, 248.29659318637275, 248.89779559118236, 249.49899799599197, 250.1002004008016, 250.70140280561122, 251.30260521042084, 251.90380761523045, 252.5050100200401, 253.1062124248497, 253.7074148296593, 254.30861723446893, 254.90981963927857, 255.51102204408818, 256.1122244488978, 256.7134268537074, 257.314629258517, 257.9158316633266, 258.5170340681363, 259.1182364729459, 259.7194388777555, 260.32064128256513, 260.92184368737475, 261.52304609218436, 262.12424849699397, 262.7254509018036, 263.32665330661325, 263.92785571142286, 264.5290581162325, 265.1302605210421, 265.7314629258517, 266.3326653306613, 266.9338677354709, 267.53507014028054, 268.1362725450902, 268.7374749498998, 269.33867735470943, 269.93987975951904, 270.54108216432866, 271.14228456913827, 271.7434869739479, 272.3446893787575, 272.9458917835671, 273.5470941883768, 274.1482965931864, 274.749498997996, 275.3507014028056, 275.9519038076152, 276.55310621242484, 277.15430861723445, 277.75551102204406, 278.35671342685373, 278.95791583166334, 279.55911823647295, 280.16032064128257, 280.7615230460922, 281.3627254509018, 281.9639278557114, 282.565130260521, 283.1663326653307, 283.7675350701403, 284.3687374749499, 284.9699398797595, 285.57114228456913, 286.17234468937875, 286.77354709418836, 287.37474949899797, 287.97595190380764, 288.57715430861725, 289.17835671342687, 289.7795591182365, 290.3807615230461, 290.9819639278557, 291.5831663326653, 292.1843687374749, 292.7855711422846, 293.3867735470942, 293.9879759519038, 294.58917835671343, 295.19038076152304, 295.79158316633266, 296.39278557114227, 296.9939879759519, 297.59519038076155, 298.19639278557116, 298.7975951903808, 299.3987975951904, 300.0])
+              .range(['#00e400ff', '#02e500ff', '#05e500ff', '#07e500ff', '#0ae500ff', '#0ce600ff', '#0fe600ff', '#11e600ff', '#14e700ff', '#17e700ff', '#19e700ff', '#1ce700ff', '#1ee800ff', '#21e800ff', '#23e800ff', '#26e800ff', '#29e900ff', '#2be900ff', '#2ee900ff', '#30ea00ff', '#33ea00ff', '#35ea00ff', '#38ea00ff', '#3aeb00ff', '#3deb00ff', '#40eb00ff', '#42eb00ff', '#45ec00ff', '#47ec00ff', '#4aec00ff', '#4ced00ff', '#4fed00ff', '#52ed00ff', '#54ed00ff', '#57ee00ff', '#59ee00ff', '#5cee00ff', '#5eee00ff', '#61ef00ff', '#64ef00ff', '#66ef00ff', '#69f000ff', '#6bf000ff', '#6ef000ff', '#70f000ff', '#73f100ff', '#75f100ff', '#78f100ff', '#7bf100ff', '#7df200ff', '#80f200ff', '#82f200ff', '#85f300ff', '#87f300ff', '#8af300ff', '#8df300ff', '#8ff400ff', '#92f400ff', '#94f400ff', '#97f400ff', '#99f500ff', '#9cf500ff', '#9ff500ff', '#a1f600ff', '#a4f600ff', '#a6f600ff', '#a9f600ff', '#abf700ff', '#aef700ff', '#b0f700ff', '#b3f700ff', '#b6f800ff', '#b8f800ff', '#bbf800ff', '#bdf800ff', '#c0f900ff', '#c2f900ff', '#c5f900ff', '#c8fa00ff', '#cafa00ff', '#cdfa00ff', '#cffa00ff', '#d2fb00ff', '#d4fb00ff', '#d7fb00ff', '#dafb00ff', '#dcfc00ff', '#dffc00ff', '#e1fc00ff', '#e4fd00ff', '#e6fd00ff', '#e9fd00ff', '#ebfd00ff', '#eefe00ff', '#f1fe00ff', '#f3fe00ff', '#f6fe00ff', '#f8ff00ff', '#fbff00ff', '#fdff00ff', '#ffff00ff', '#fffe00ff', '#fffd00ff', '#fffb00ff', '#fffa00ff', '#fff900ff', '#fff700ff', '#fff600ff', '#fff500ff', '#fff400ff', '#fff200ff', '#fff100ff', '#fff000ff', '#ffee00ff', '#ffed00ff', '#ffec00ff', '#ffea00ff', '#ffe900ff', '#ffe800ff', '#ffe700ff', '#ffe500ff', '#ffe400ff', '#ffe300ff', '#ffe100ff', '#ffe000ff', '#ffdf00ff', '#ffde00ff', '#ffdc00ff', '#ffdb00ff', '#ffda00ff', '#ffd800ff', '#ffd700ff', '#ffd600ff', '#ffd400ff', '#ffd300ff', '#ffd200ff', '#ffd100ff', '#ffcf00ff', '#ffce00ff', '#ffcd00ff', '#ffcb00ff', '#ffca00ff', '#ffc900ff', '#ffc700ff', '#ffc600ff', '#ffc500ff', '#ffc400ff', '#ffc200ff', '#ffc100ff', '#ffc000ff', '#ffbe00ff', '#ffbd00ff', '#ffbc00ff', '#ffba00ff', '#ffb900ff', '#ffb800ff', '#ffb700ff', '#ffb500ff', '#ffb400ff', '#ffb300ff', '#ffb100ff', '#ffb000ff', '#ffaf00ff', '#ffad00ff', '#ffac00ff', '#ffab00ff', '#ffaa00ff', '#ffa800ff', '#ffa700ff', '#ffa600ff', '#ffa400ff', '#ffa300ff', '#ffa200ff', '#ffa100ff', '#ff9f00ff', '#ff9e00ff', '#ff9d00ff', '#ff9b00ff', '#ff9a00ff', '#ff9900ff', '#ff9700ff', '#ff9600ff', '#ff9500ff', '#ff9400ff', '#ff9200ff', '#ff9100ff', '#ff9000ff', '#ff8e00ff', '#ff8d00ff', '#ff8c00ff', '#ff8a00ff', '#ff8900ff', '#ff8800ff', '#ff8700ff', '#ff8500ff', '#ff8400ff', '#ff8300ff', '#ff8100ff', '#ff8000ff', '#ff7f00ff', '#ff7d00ff', '#ff7c00ff', '#ff7b00ff', '#ff7a00ff', '#ff7800ff', '#ff7700ff', '#ff7600ff', '#ff7500ff', '#ff7300ff', '#ff7200ff', '#ff7100ff', '#ff7000ff', '#ff6e00ff', '#ff6d00ff', '#ff6c00ff', '#ff6a00ff', '#ff6900ff', '#ff6800ff', '#ff6700ff', '#ff6500ff', '#ff6400ff', '#ff6300ff', '#ff6200ff', '#ff6000ff', '#ff5f00ff', '#ff5e00ff', '#ff5d00ff', '#ff5b00ff', '#ff5a00ff', '#ff5900ff', '#ff5700ff', '#ff5600ff', '#ff5500ff', '#ff5400ff', '#ff5200ff', '#ff5100ff', '#ff5000ff', '#ff4f00ff', '#ff4d00ff', '#ff4c00ff', '#ff4b00ff', '#ff4a00ff', '#ff4800ff', '#ff4700ff', '#ff4600ff', '#ff4400ff', '#ff4300ff', '#ff4200ff', '#ff4100ff', '#ff3f00ff', '#ff3e00ff', '#ff3d00ff', '#ff3c00ff', '#ff3a00ff', '#ff3900ff', '#ff3800ff', '#ff3700ff', '#ff3500ff', '#ff3400ff', '#ff3300ff', '#ff3100ff', '#ff3000ff', '#ff2f00ff', '#ff2e00ff', '#ff2c00ff', '#ff2b00ff', '#ff2a00ff', '#ff2900ff', '#ff2700ff', '#ff2600ff', '#ff2500ff', '#ff2300ff', '#ff2200ff', '#ff2100ff', '#ff2000ff', '#ff1e00ff', '#ff1d00ff', '#ff1c00ff', '#ff1b00ff', '#ff1900ff', '#ff1800ff', '#ff1700ff', '#ff1600ff', '#ff1400ff', '#ff1300ff', '#ff1200ff', '#ff1000ff', '#ff0f00ff', '#ff0e00ff', '#ff0d00ff', '#ff0b00ff', '#ff0a00ff', '#ff0900ff', '#ff0800ff', '#ff0600ff', '#ff0500ff', '#ff0400ff', '#ff0300ff', '#ff0100ff', '#ff0000ff', '#ff0000ff', '#fe0001ff', '#fd0001ff', '#fc0002ff', '#fb0003ff', '#fa0004ff', '#f90005ff', '#f80005ff', '#f70006ff', '#f60007ff', '#f50008ff', '#f40008ff', '#f30009ff', '#f2000aff', '#f1000bff', '#ef000bff', '#ee000cff', '#ed000dff', '#ec000eff', '#eb000eff', '#ea000fff', '#e90010ff', '#e80011ff', '#e70012ff', '#e60012ff', '#e50013ff', '#e40014ff', '#e30015ff', '#e20015ff', '#e10016ff', '#e00017ff', '#df0018ff', '#de0018ff', '#dd0019ff', '#dc001aff', '#db001bff', '#da001bff', '#d9001cff', '#d8001dff', '#d7001eff', '#d6001fff', '#d5001fff', '#d40020ff', '#d30021ff', '#d20022ff', '#d10022ff', '#d00023ff', '#cf0024ff', '#ce0025ff', '#cd0025ff', '#cc0026ff', '#cb0027ff', '#ca0028ff', '#c90028ff', '#c70029ff', '#c6002aff', '#c5002bff', '#c4002cff', '#c3002cff', '#c2002dff', '#c1002eff', '#c0002fff', '#bf002fff', '#be0030ff', '#bd0031ff', '#bc0032ff', '#bb0032ff', '#ba0033ff', '#b90034ff', '#b80035ff', '#b70035ff', '#b60036ff', '#b50037ff', '#b40038ff', '#b30039ff', '#b20039ff', '#b1003aff', '#b0003bff', '#af003cff', '#ae003cff', '#ad003dff', '#ac003eff', '#ab003fff', '#aa003fff', '#a90040ff', '#a80041ff', '#a70042ff', '#a60042ff', '#a50043ff', '#a40044ff', '#a30045ff', '#a20046ff', '#a00046ff', '#9f0047ff', '#9e0048ff', '#9d0049ff', '#9c0049ff', '#9b004aff', '#9a004bff', '#99004cff', '#99004bff', '#99004bff', '#98004bff', '#98004aff', '#98004aff', '#980049ff', '#970049ff', '#970049ff', '#970048ff', '#960048ff', '#960047ff', '#960047ff', '#960047ff', '#950046ff', '#950046ff', '#950045ff', '#950045ff', '#940044ff', '#940044ff', '#940044ff', '#930043ff', '#930043ff', '#930042ff', '#930042ff', '#920042ff', '#920041ff', '#920041ff', '#920040ff', '#910040ff', '#910040ff', '#91003fff', '#90003fff', '#90003eff', '#90003eff', '#90003dff', '#8f003dff', '#8f003dff', '#8f003cff', '#8f003cff', '#8e003bff', '#8e003bff', '#8e003bff', '#8d003aff', '#8d003aff', '#8d0039ff', '#8d0039ff', '#8c0038ff', '#8c0038ff', '#8c0038ff', '#8c0037ff', '#8b0037ff', '#8b0036ff', '#8b0036ff', '#8a0036ff', '#8a0035ff', '#8a0035ff', '#8a0034ff', '#890034ff', '#890034ff', '#890033ff', '#890033ff', '#880032ff', '#880032ff', '#880031ff', '#880031ff', '#870031ff', '#870030ff', '#870030ff', '#86002fff', '#86002fff', '#86002fff', '#86002eff', '#85002eff', '#85002dff', '#85002dff', '#85002dff', '#84002cff', '#84002cff', '#84002bff', '#83002bff', '#83002aff', '#83002aff', '#83002aff', '#820029ff', '#820029ff', '#820028ff', '#820028ff', '#810028ff', '#810027ff', '#810027ff', '#800026ff', '#800026ff', '#800026ff', '#800025ff', '#7f0025ff', '#7f0024ff', '#7f0024ff', '#7f0023ff', '#7e0023ff', '#7e0023ff']);
+    
+
+    color_map_ee2132ed4ffd74214482ec399cc5a182.x = d3.scale.linear()
+              .domain([0.0, 300.0])
+              .range([0, 450 - 50]);
+
+    color_map_ee2132ed4ffd74214482ec399cc5a182.legend = L.control({position: 'topright'});
+    color_map_ee2132ed4ffd74214482ec399cc5a182.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_ee2132ed4ffd74214482ec399cc5a182.legend.addTo(map_6c6f86374978b3368d5846ba66e0ebd8);
+
+    color_map_ee2132ed4ffd74214482ec399cc5a182.xAxis = d3.svg.axis()
+        .scale(color_map_ee2132ed4ffd74214482ec399cc5a182.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 60.0, 120.0, 180.0, 240.0, 300.0]);
+
+    color_map_ee2132ed4ffd74214482ec399cc5a182.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_ee2132ed4ffd74214482ec399cc5a182.g = color_map_ee2132ed4ffd74214482ec399cc5a182.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_ee2132ed4ffd74214482ec399cc5a182.g.selectAll("rect")
+        .data(color_map_ee2132ed4ffd74214482ec399cc5a182.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_ee2132ed4ffd74214482ec399cc5a182.x(color_map_ee2132ed4ffd74214482ec399cc5a182.color.domain()[i - 1]) : color_map_ee2132ed4ffd74214482ec399cc5a182.x.range()[0],
+            x1: i < color_map_ee2132ed4ffd74214482ec399cc5a182.color.domain().length ? color_map_ee2132ed4ffd74214482ec399cc5a182.x(color_map_ee2132ed4ffd74214482ec399cc5a182.color.domain()[i]) : color_map_ee2132ed4ffd74214482ec399cc5a182.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_ee2132ed4ffd74214482ec399cc5a182.g.call(color_map_ee2132ed4ffd74214482ec399cc5a182.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Air Quality Index (AQI)");
+</script>
+</html>
